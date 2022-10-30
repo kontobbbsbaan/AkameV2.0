@@ -144,12 +144,10 @@ const ftroli = {
     },
     "message": {
         orderMessage: {
-            itemCount: 2022,
+            itemCount: 999999,
             status: 200,
             thumbnail: thumb,
             surface: 200,
-            message: `Haii Kak ${pushname}\n𝙲𝚖𝚍 ${command}`,
-            orderTitle: 'Please Follow TikTok @GuaAbuzz',
             sellerJid: '0@s.whatsapp.net'
         }
     },
@@ -169,7 +167,7 @@ const fdoc = {
     },
     message: {
         documentMessage: {
-            title: '©GuaAbuzz',
+            title: 'MODZ BOTZ',
             jpegThumbnail: thumb
         }
     }
@@ -199,11 +197,11 @@ const fgif = {
     },
     message: {
         "videoMessage": {
-            "title": '©GuaAbuzz',
+            "title": 'MODZ BOTZ',
             "h": `Hmm`,
             'seconds': '359996400',
             'gifPlayback': 'true',
-            'caption': '©GuaAbuzz',
+            'caption': 'MODZ BOTZ',
             'jpegThumbnail': thumb
         }
     }
@@ -218,8 +216,8 @@ const fgclink = {
         "groupInviteMessage": {
             "groupJid": "6289636827082-1635036556@g.us",
             "inviteCode": "https://chat.whatsapp.com/FGmVjFYJBjjGst62qwNKJB",
-            "groupName": "Akame Bot",
-            "caption": '©GuaAbuzz',
+            "groupName": "MODZ BOTZ",
+            "caption": 'MODZ BOTZ',
             'jpegThumbnail': thumb
         }
     }
@@ -253,7 +251,7 @@ const floc = {
     },
     message: {
         locationMessage: {
-            name: 'GuaAbuzz Creator',
+            name: 'MODZ BOTZ',
             jpegThumbnail: thumb
         }
     }
@@ -268,8 +266,8 @@ const fkontak = {
     },
     message: {
         'contactMessage': {
-            'displayName': 'GuaAbuzz Creator',
-            'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;GuaAbuzz Creator;;;\nFN:GuaAbuzz Creator\nitem1.TEL;waid=6289636827082:6289636827082\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
+            'displayName': 'KIAN',
+            'vcard': `BEGIN:VCARD\nVERSION:3.0\nN:XL;KIAN Creator;;;\nFN:KIAN Creator\nitem1.TEL;waid=6289636827082:6289636827082\nitem1.X-ABLabel:Ponsel\nEND:VCARD`,
             'jpegThumbnail': thumb,
             thumbnail: thumb,
             sendEphemeral: true
@@ -289,7 +287,7 @@ const fakestatus = {
         "imageMessage": {
             "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc",
             "mimetype": "image/jpeg",
-            "caption": '©GuaAbuzz',
+            "caption": 'MODZ BOTZ',
             "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=",
             "fileLength": "28777",
             "height": 1080,
@@ -327,15 +325,15 @@ const fakestatus = {
             if (typeof chats !== 'object') global.db.data.chats[m.chat] = {}
             if (chats) {
                 if (!('mute' in chats)) chats.mute = false
-                if (!('antilink' in chats)) chats.antilink = false
-                if (!('antilinkyt' in chats)) chats.antilinkyt = false
-                if (!('antilinktt' in chats)) chats.antilinktt = false
+                if (!('antilink' in chats)) chats.antilink = true
+                if (!('antilinkyt' in chats)) chats.antilinkyt = true
+                if (!('antilinktt' in chats)) chats.antilinktt = true
                 if (!('antivirtex' in chats)) chats.antivirtex = true
             } else global.db.data.chats[m.chat] = {
                 mute: false,
-                antilink: false,
-                antilinkyt: false,
-                antilinktt: false,
+                antilink: true,
+                antilinkyt: true,
+                antilinktt: true,
                 antivirtex: true,
             }
 
@@ -343,7 +341,7 @@ const fakestatus = {
             if (typeof setting !== 'object') global.db.data.settings[botNumber] = {}
             if (setting) {
                 if (!isNumber(setting.status)) setting.status = 0
-                if (!('autobio' in setting)) setting.autobio = true
+                if (!('autobio' in setting)) setting.autobio = false
                 if (!('templateImage' in setting)) setting.templateImage = true
                 if (!('templateVideo' in setting)) setting.templateVideo = false
                 if (!('templateGif' in setting)) setting.templateGif = false
@@ -351,7 +349,7 @@ const fakestatus = {
                 if (!('templateLocation' in setting)) setting.templateLocation = false
             } else global.db.data.settings[botNumber] = {
                 status: 0,
-                autobio: true,
+                autobio: false,
                 templateImage: true,
                 templateVideo: false,
                 templateGif: false,
@@ -391,7 +389,7 @@ const fakestatus = {
 	    if (new Date() * 1 - setting.status > 1000) {
 		let _uptime = process.uptime() * 1000
 		let uptime = clockString(_uptime)
-		await akame.updateProfileStatus(`I am Akame-Bot | Aktif Selama ${uptime} | Mode : ${akame.public ? 'Public-Mode' : 'Self-Mode'} | User : ${Object.keys(global.db.data.users).length} | Jangan Telp Bot | © Created GuaAbuzz-Kun`).catch(_ => _)
+		await akame.updateProfileStatus(`I am modzBotz | Aktif Selama ${uptime} | Mode : ${akame.public ? 'Public-Mode' : 'Self-Mode'} | User : ${Object.keys(global.db.data.users).length} | Jangan Telp Bot | © Created Kian`).catch(_ => _)
 		setting.status = new Date() * 1
 	    }
 	}
@@ -454,7 +452,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 await akame.sendButtonText(m.chat, [{
                     buttonId: 'tebak asahotak',
                     buttonText: {
-                        displayText: '⌲ Tebak Asah Otak'
+                        displayText: ' Tebak Asah Otak'
                     },
                     type: 1
                 }], `🎮 Asah Otak 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, akame.user.name, fakestatus)
@@ -472,7 +470,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 await akame.sendButtonText(m.chat, [{
                     buttonId: 'tebak siapakahaku',
                     buttonText: {
-                        displayText: '⌲ Tebak Siapkah Aku'
+                        displayText: ' Tebak Siapkah Aku'
                     },
                     type: 1
                 }], `🎮 Siapakah Aku 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, akame.user.name, fakestatus)
@@ -490,7 +488,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 await akame.sendButtonText(m.chat, [{
                     buttonId: 'tebak susunkata',
                     buttonText: {
-                        displayText: '⌲ Tebak Susun Kata'
+                        displayText: ' Tebak Susun Kata'
                     },
                     type: 1
                 }], `🎮 Susun Kata 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, akame.user.name, fakestatus)
@@ -508,7 +506,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 await akame.sendButtonText(m.chat, [{
                     buttonId: 'tebak bendera',
                     buttonText: {
-                        displayText: '⌲ Tebak Bendera'
+                        displayText: ' Tebak Bendera'
                     },
                     type: 1
                 }], `🎮 Tebak Bendera 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, akame.user.name, fakestatus)
@@ -526,7 +524,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 await akame.sendButtonText(m.chat, [{
                     buttonId: 'tebak bendera2',
                     buttonText: {
-                        displayText: '⌲ Tebak Bendera 2'
+                        displayText: ' Tebak Bendera 2'
                     },
                     type: 1
                 }], `🎮 Tebak Bendera 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, akame.user.name, fakestatus)
@@ -544,7 +542,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 await akame.sendButtonText(m.chat, [{
                     buttonId: 'tebak kabupaten',
                     buttonText: {
-                        displayText: '⌲ Tebak Kabupaten'
+                        displayText: ' Tebak Kabupaten'
                     },
                     type: 1
                 }], `🎮 Tebak Kabupaten 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, akame.user.name, fakestatus)
@@ -562,7 +560,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 await akame.sendButtonText(m.chat, [{
                     buttonId: 'tebak susunkata',
                     buttonText: {
-                        displayText: '⌲ Tebak Susun Kata'
+                        displayText: ' Tebak Susun Kata'
                     },
                     type: 1
                 }], `🎮 Susun Kata 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, akame.user.name, fakestatus)
@@ -580,7 +578,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 await akame.sendButtonText(m.chat, [{
                     buttonId: 'tebak kimia',
                     buttonText: {
-                        displayText: '⌲ Tebak Kimia'
+                        displayText: ' Tebak Kimia'
                     },
                     type: 1
                 }], `🎮 Tebak Kimia 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, akame.user.name, fakestatus)
@@ -598,7 +596,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 await akame.sendButtonText(m.chat, [{
                     buttonId: 'tebak tekateki',
                     buttonText: {
-                        displayText: '⌲ Tebak Teka Teki'
+                        displayText: ' Tebak Teka Teki'
                     },
                     type: 1
                 }], `🎮 Teka Teki 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, akame.user.name, fakestatus)
@@ -616,7 +614,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 await akame.sendButtonText(m.chat, [{
                     buttonId: 'tebak lagu',
                     buttonText: {
-                        displayText: '⌲ Tebak Lagu'
+                        displayText: ' Tebak Lagu'
                     },
                     type: 1
                 }], `🎮 Tebak Lagu 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, akame.user.name, fakestatus)
@@ -631,7 +629,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 await m.reply('*Anda Telah menyerah*')
                 delete kuismath[m.sender.split('@')[0]]
             } else if (budy.toLowerCase() == jawaban) {
-                await m.reply(`🎮 Kuis Matematika  🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? kirim ${prefix}math mode`)
+                await m.reply(`🎮 Kuis Matematika  🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? kirim • ${prefix}math mode`)
                 delete kuismath[m.sender.split('@')[0]]
             } else m.reply('*Jawaban Salah!*')
         }
@@ -646,7 +644,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 await akame.sendButtonText(m.chat, [{
                     buttonId: 'tebak gambar',
                     buttonText: {
-                        displayText: '⌲ Tebak Gambar'
+                        displayText: ' Tebak Gambar'
                     },
                     type: 1
                 }], `🎮 Tebak Gambar 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, akame.user.name, fakestatus)
@@ -664,7 +662,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 await akame.sendButtonText(m.chat, [{
                     buttonId: 'tebak kata',
                     buttonText: {
-                        displayText: '⌲ Tebak Kata'
+                        displayText: ' Tebak Kata'
                     },
                     type: 1
                 }], `🎮 Tebak Kata 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, akame.user.name, fakestatus)
@@ -683,7 +681,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 await akame.sendButtonText(m.chat, [{
                     buttonId: 'tebak lontong',
                     buttonText: {
-                        displayText: '⌲ Tebak Lontong'
+                        displayText: ' Tebak Lontong'
                     },
                     type: 1
                 }], `🎮 Cak Lontong 🎮\n\nJawaban Benar 🎉\n*${deskripsi}*\n\nIngin bermain lagi? tekan button dibawah`, akame.user.name, fakestatus)
@@ -702,7 +700,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 await akame.sendButtonText(m.chat, [{
                     buttonId: 'tebak kalimat',
                     buttonText: {
-                        displayText: '⌲ Tebak Kalimat'
+                        displayText: ' Tebak Kalimat'
                     },
                     type: 1
                 }], `🎮 Tebak Kalimat 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, akame.user.name, fakestatus)
@@ -720,7 +718,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 await akame.sendButtonText(m.chat, [{
                     buttonId: 'tebak lirik',
                     buttonText: {
-                        displayText: '⌲ Tebak Lirik'
+                        displayText: ' Tebak Lirik'
                     },
                     type: 1
                 }], `🎮 Tebak Lirik 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, akame.user.name, fakestatus)
@@ -738,7 +736,7 @@ ${Array.from(room.jawaban, (jawaban, index) => {
                 await akame.sendButtonText(m.chat, [{
                     buttonId: 'tebak tebakan',
                     buttonText: {
-                        displayText: '⌲ Tebak Tebakan'
+                        displayText: ' Tebak Tebakan'
                     },
                     type: 1
                 }], `🎮 Tebak Tebakan 🎮\n\nJawaban Benar 🎉\n\nIngin bermain lagi? tekan button dibawah`, akame.user.name, fakestatus)
@@ -749,34 +747,21 @@ ${Array.from(room.jawaban, (jawaban, index) => {
         //Anti Link
         if (db.data.chats[m.chat].antilink) {
             if (budy.match(`chat.whatsapp.com`)) {
-                m.reply(`「 ANTI LINK WHATSAPP 」\n\nKamu Terdeteksi Mengirim Link Group, Maaf Kamu Akan Di Kick !`)
-                if (!isBotAdmins) return m.reply(`Ehh Bot Gak Admin T_T`)
                 let gclink = (`https://chat.whatsapp.com/` + await akame.groupInviteCode(m.chat))
                 let isLinkThisGc = new RegExp(gclink, 'i')
                 let isgclink = isLinkThisGc.test(m.text)
-                if (isgclink) return m.reply(`Ehh Maaf Gak Jadi, Link Group Ini Ternyata 😆`)
-                if (isAdmins) return m.reply(`Ehh Maaf Ternyata Kamu Admin 😁`)
-                if (isCreator) return m.reply(`Ehh Maaf Kamu Ownerku Ternyata 😅`)
                 akame.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
             }
         }
         //Anti Link YouTube
         if (db.data.chats[m.chat].antilinkyt) {
             if (budy.match(`https://youtu.be`)) {
-                m.reply(`「 ANTI LINK YOUTUBE 」\n\nKamu Terdeteksi Mengirim Link Youtube, Maaf Kamu Akan Di Kick !`)
-                if (!isBotAdmins) return m.reply(`Ehh Bot Gak Admin T_T`)
-                if (isAdmins) return m.reply(`Ehh Maaf Ternyata Kamu Admin 😁`)
-                if (isCreator) return m.reply(`Ehh Maaf Kamu Ownerku Ternyata 😅`)
                 akame.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
             }
         }
         //Anti Link Tiktok
         if (db.data.chats[m.chat].antilinktt) {
             if (budy.match(`https://vt.tiktok.com`)) {
-                m.reply(`「 ANTI LINK TIKTOK 」\n\nKamu Terdeteksi Mengirim Link TikTok, Maaf Kamu Akan Di Kick !`)
-                if (!isBotAdmins) return m.reply(`Ehh Bot Gak Admin T_T`)
-                if (isAdmins) return m.reply(`Ehh Maaf Ternyata Kamu Admin 😁`)
-                if (isCreator) return m.reply(`Ehh Maaf Kamu Ownerku Ternyata 😅`)
                 akame.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
             }
         }
@@ -784,10 +769,6 @@ ${Array.from(room.jawaban, (jawaban, index) => {
         if (db.data.chats[m.chat].antivirtex) {
             if (budy.length > 3500) {
                 m.reply(`Seseorang mengirim spam virus!! tandai sebagai membaca⚠️\n`.repeat(300))
-                m.reply(`「 ANTI VIRTEX 」\n\nKamu Terdeteksi Mengirim Virtex, Maaf Kamu Akan Di Kick !`)
-                if (!isBotAdmins) return m.reply(`Ehh Bot Gak Admin T_T`)
-                if (isAdmins) return m.reply(`Ehh Maaf Ternyata Kamu Admin 😁`)
-                if (isCreator) return m.reply(`Ehh Maaf Kamu Ownerku Ternyata 😅`)
                 akame.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
             }
         }
@@ -1023,7 +1004,7 @@ Ketik *nyerah* untuk menyerah dan mengakui kekalahan`
                         state: 'WAITING'
                     }
                     if (text) room.name = text
-                    m.reply('Menunggu partner' + (text ? ` mengetik command dibawah ini ${prefix}${command} ${text}` : ''))
+                    m.reply('Menunggu partner' + (text ? ` mengetik command dibawah ini • ${prefix}${command} ${text}` : ''))
                     this.game[room.id] = room
                 }
             }
@@ -1051,7 +1032,7 @@ Ketik *nyerah* untuk menyerah dan mengakui kekalahan`
                 let timeout = 60000
                 if (Object.values(this.suit).find(roof => roof.id.startsWith('suit') && [roof.p, roof.p2].includes(m.sender))) m.reply(`Selesaikan suit mu yang sebelumnya`)
                 if (m.mentionedJid[0] === m.sender) return m.reply(`Tidak bisa bermain dengan diri sendiri !`)
-                if (!m.mentionedJid[0]) return m.reply(`_Siapa yang ingin kamu tantang?_\nTag orangnya..\n\nContoh : ${prefix}suit @${owner[1]}`, m.chat, {
+                if (!m.mentionedJid[0]) return m.reply(`_Siapa yang ingin kamu tantang?_\nTag orangnya..\n\nContoh : • ${prefix}suit @${owner[1]}`, m.chat, {
                     mentions: [owner[1] + '@s.whatsapp.net']
                 })
                 if (Object.values(this.suit).find(roof => roof.id.startsWith('suit') && [roof.p, roof.p2].includes(m.mentionedJid[0]))) throw `Orang yang kamu tantang sedang bermain suit bersama orang lain :(`
@@ -1117,6 +1098,473 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 m.reply(`Sama-Sama Kak ${pushname}`)
                 }
                 break
+                case 'menu': {
+                m.reply(`SUPPORT ME 🙏
+My Youtube: https://bit.ly/3U4rAvr
+Donasi: https://saweria.co/Kianganz
+Grub: https://bit.ly/3gRsxJn
+
+ANONYMOUS CHAT
+  ${prefix}anonymous
+  ${prefix}start
+  ${prefix}next
+  ${prefix}keluar
+  ${prefix}menfes
+  ${prefix}confes
+  ${prefix}menfesconfirm
+
+ ANIME
+  ${prefix}hololive
+  ${prefix}couples
+  ${prefix}couple
+  ${prefix}waifu
+  ${prefix}husbu
+  ${prefix}neko
+  ${prefix}uniform
+  ${prefix}cosplay
+  ${prefix}maid
+  ${prefix}oppai
+  ${prefix}selfies
+  ${prefix}shinobu
+  ${prefix}akira
+  ${prefix}akiyama
+  ${prefix}ana
+  ${prefix}asuna
+  ${prefix}ayuzawa
+  ${prefix}boruto
+  ${prefix}chitoge
+  ${prefix}deidara
+  ${prefix}doraemon
+  ${prefix}elaina
+  ${prefix}emilia
+  ${prefix}erza
+  ${prefix}gremory
+  ${prefix}hestia
+  ${prefix}hinata
+  ${prefix}inori
+  ${prefix}isuzu
+  ${prefix}itachi
+  ${prefix}itori
+  ${prefix}kaga
+  ${prefix}kagura
+  ${prefix}kakasih
+  ${prefix}kaori
+  ${prefix}keneki
+  ${prefix}kotori
+  ${prefix}kurumi
+  ${prefix}loli
+  ${prefix}madara
+  ${prefix}mikasa
+  ${prefix}miku
+  ${prefix}minato
+  ${prefix}naruto
+  ${prefix}nezuko
+  ${prefix}onepiece
+  ${prefix}pokemon
+  ${prefix}rize
+  ${prefix}sagiri
+  ${prefix}sakura
+  ${prefix}shinka
+  ${prefix}shizuka
+  ${prefix}shouta
+  ${prefix}toukachan
+  ${prefix}tsunade
+  ${prefix}yuki
+  ${prefix}raiden
+  ${prefix}calliope
+  ${prefix}kitagawa
+
+ ASUPAN 
+  ${prefix}cecan
+  ${prefix}cogan
+  ${prefix}china
+  ${prefix}japan
+  ${prefix}korea
+  ${prefix}indonesia
+  ${prefix}malaysia
+  ${prefix}thailand
+  ${prefix}vietnam
+  ${prefix}blankpink
+  ${prefix}justina
+  ${prefix}kpop
+  ${prefix}rose
+  ${prefix}ryujin
+
+ CONVERT 
+  ${prefix}nulis
+  ${prefix}removebg [image]
+  ${prefix}toimage [reply sticker]
+  ${prefix}tovideo [reply sticker]
+  ${prefix}togif [reply sticker]
+  ${prefix}tourl [image / video]
+  ${prefix}tovn [reply video]
+  ${prefix}tomp3 [reply video]
+  ${prefix}toaudio [reply video]
+
+ DOWNLOADER 
+  ${prefix}tiktoknowm [url]
+  ${prefix}tiktokwm [url]
+  ${prefix}tiktokmp3 [url]
+  ${prefix}instagram [url]
+  ${prefix}instastory [url]
+  ${prefix}twitter [url]
+  ${prefix}twittermp3 [url]
+  ${prefix}facebook [url]
+  ${prefix}zippyshare [url]
+  ${prefix}mediafire [url]
+  ${prefix}ytmp3 [url]
+  ${prefix}ytmp4 [url]
+  ${prefix}getmusic [query]
+  ${prefix}getvideo [query]
+  ${prefix}umma [url]
+  ${prefix}joox [query]
+  ${prefix}soundcloud [url]
+
+ DATABASE 
+  ${prefix}setcmd [reply sticker/pesan]
+  ${prefix}listcmd
+  ${prefix}delcmd [reply sticker/pesan]
+  ${prefix}lockcmd
+  ${prefix}addmsg
+  ${prefix}listmsg
+  ${prefix}getmsg
+  ${prefix}delmsg
+ 
+ EPHOTO 
+  ${prefix}logo2
+  ${prefix}logo3
+  ${prefix}logo4
+  ${prefix}logogaming
+  ${prefix}logogirl
+  ${prefix}logogold
+  ${prefix}spiderlogo
+  ${prefix}ffcover
+  ${prefix}crossfire
+  ${prefix}galaxy
+  ${prefix}glass
+  ${prefix}neon
+  ${prefix}beach
+  ${prefix}awan
+  ${prefix}flower
+  ${prefix}bohlam
+  ${prefix}kaligrafi
+  ${prefix}coklat
+  ${prefix}quotes
+  ${prefix}grafity
+  ${prefix}marmer
+  ${prefix}musimsemi
+  ${prefix}ruby
+  ${prefix}shadowtext
+  ${prefix}starlogo
+  ${prefix}starnight
+  ${prefix}starnight2
+  ${prefix}blackpink
+  ${prefix}cake
+  ${prefix}flashlight
+  ${prefix}puppycute
+  ${prefix}yasuologo
+  ${prefix}certificate
+  ${prefix}igcertificate
+  ${prefix}ytcertificate
+
+ GROUP 
+  ${prefix}linkgroup
+  ${prefix}tagall [text]
+  ${prefix}revoke 
+  ${prefix}tagmenu [option]
+  ${prefix}ephemeral [option]
+  ${prefix}setppgrup full [image]
+  ${prefix}setname [text]
+  ${prefix}setdesc [text]
+  ${prefix}group [option]
+  ${prefix}editinfo [option]
+  ${prefix}kick @user
+  ${prefix}+ @user
+  ${prefix}- @user
+  ${prefix}hidetag [text]
+  ${prefix}totag [reply]
+  ${prefix}promote @user
+  ${prefix}demote @user
+  ${prefix}mute [on/off]
+  ${prefix}antilink [on/off]
+  ${prefix}antilinkyt [on/off]
+  ${prefix}antilinktt [on/off]
+  ${prefix}vote [text]
+  ${prefix}devote
+  ${prefix}upvote
+  ${prefix}cekvote
+  ${prefix}hapusvote
+  ${prefix}intro
+
+ GAME 
+  ${prefix}delttt
+  ${prefix}tictactoe
+  ${prefix}family100
+  ${prefix}tebakmenu [option]
+  ${prefix}math [mode]
+  ${prefix}suitpvp [@tag]
+
+ ISLAMIC 
+  ${prefix}iqra
+  ${prefix}hadist
+  ${prefix}alquran
+  ${prefix}juzamma
+  ${prefix}kisahnabi
+  ${prefix}tafsirsurah
+  ${prefix}jadwalsholat
+  ${prefix}niatsholat
+  ${prefix}kisahmuslim
+  ${prefix}asmaulhusna
+
+ KERANG 
+  ${prefix}apakah [teks]
+  ${prefix}bisakah [teks]
+  ${prefix}bagaimanakah [teks]
+  ${prefix}rate [teks]
+  ${prefix}kapankah [teks]
+  ${prefix}cekganteng [teks]
+  ${prefix}cekcantik [teks]
+  ${prefix}ceksange [teks]
+  ${prefix}cekgay [teks]
+  ${prefix}ceklesbi [teks]
+  ${prefix}cekmati [teks]
+  ${prefix}wangy [teks]
+  ${prefix}halah [teks]
+  ${prefix}hilih [teks]
+  ${prefix}huluh [teks]
+  ${prefix}heleh [teks]
+  ${prefix}holoh [teks]
+  ${prefix}jadian [teks]
+  ${prefix}jodohku [teks]
+
+ MEME 
+  ${prefix}animememe
+  ${prefix}anjing
+  ${prefix}meme
+  ${prefix}memeindo
+  ${prefix}darkjoke
+  ${prefix}darkjokes
+  ${prefix}onecak
+
+ MAIN 
+  ${prefix}ping
+  ${prefix}owner
+  ${prefix}donasi
+  ${prefix}delete
+  ${prefix}infochat
+  ${prefix}quoted
+  ${prefix}listpc
+  ${prefix}listgc
+  ${prefix}listonline
+  ${prefix}speedtest
+
+ OWNER 
+  ${prefix}setnamabot
+  ${prefix}setbiobot
+  ${prefix}react [emoji]
+  ${prefix}shutdown
+  ${prefix}autosw
+  ${prefix}myip
+  ${prefix}setexif
+  ${prefix}chat [option]
+  ${prefix}join [link]
+  ${prefix}leave
+  ${prefix}block @user
+  ${prefix}unblock @user
+  ${prefix}bcgroup [text]
+  ${prefix}bcall [text]
+  ${prefix}setppbot full [image]
+  ${prefix}setmenu [option]
+  ${prefix}setstatus
+  ${prefix}setnamebot
+  ${prefix}o-tagall
+  ${prefix}o-hidetag
+  ${prefix}o-add
+  ${prefix}o-kick
+
+ PRIMBON 
+  ${prefix}nomorhoki
+  ${prefix}artimimpi
+  ${prefix}artinama
+  ${prefix}ramaljodoh
+  ${prefix}ramaljodohbali
+  ${prefix}suamiistri
+  ${prefix}ramalcinta
+  ${prefix}cocoknama
+  ${prefix}pasangan
+  ${prefix}jadiannikah
+  ${prefix}sifatusaha
+  ${prefix}rezeki
+  ${prefix}pekerjaan
+  ${prefix}nasib
+  ${prefix}penyakit
+  ${prefix}tarot
+  ${prefix}fengshui
+  ${prefix}haribaik
+  ${prefix}harisangar
+  ${prefix}harisial
+  ${prefix}nagahari
+  ${prefix}arahrezeki
+  ${prefix}peruntungan
+  ${prefix}weton
+  ${prefix}karakter
+  ${prefix}keberuntungan
+  ${prefix}memancing
+  ${prefix}masasubur
+  ${prefix}zodiak
+  ${prefix}shio
+
+ PHOTO EDITOR 
+  ${prefix}gay
+  ${prefix}contrast
+  ${prefix}pixelate
+  ${prefix}dither
+  ${prefix}sepia
+  ${prefix}brighten
+  ${prefix}greyscale
+  ${prefix}circle
+  ${prefix}blur
+  ${prefix}invert
+  ${prefix}scale
+  ${prefix}upscale
+  ${prefix}glass
+  ${prefix}wasted
+  ${prefix}passed
+  ${prefix}comrade
+  ${prefix}jail
+  ${prefix}triggered
+
+ QUOTES 
+  ${prefix}quotesanime
+  ${prefix}animequotes
+  ${prefix}motivasi
+  ${prefix}dilanquote
+  ${prefix}bucinquote
+  ${prefix}katasenja
+  ${prefix}randomquote
+  ${prefix}muslimquote
+  ${prefix}galauquote
+  ${prefix}kanyequote
+  ${prefix}trumpquote
+  ${prefix}trumpthink
+  ${prefix}creepyfact
+  ${prefix}faktaunik
+  ${prefix}puisi
+  ${prefix}pantun
+  ${prefix}cerpen
+
+ RANDOM 
+  ${prefix}simih [teks]
+  ${prefix}apikey
+  ${prefix}coffe
+  ${prefix}ebinary [teks]
+  ${prefix}dbinary [teks]
+  ${prefix}styletext [teks]
+
+ STICKER 
+  ${prefix}sticker
+  ${prefix}stickerwm
+  ${prefix}attp [teks]
+  ${prefix}ttp [teks]
+  ${prefix}mukalu
+  ${prefix}paimon
+  ${prefix}amongus
+  ${prefix}dadu
+  ${prefix}gura
+  ${prefix}doge
+  ${prefix}bucinstick
+  ${prefix}patrick
+  ${prefix}emojimix [emoji+emoji]
+  ${prefix}emojimix2 [emoji]
+
+ SEARCH 
+  ${prefix}play [query]
+  ${prefix}yts [query]
+  ${prefix}google [query]
+  ${prefix}gimage [query]
+  ${prefix}pinterest [query]
+  ${prefix}wallpaper [query]
+  ${prefix}wikimedia [query]
+  ${prefix}ytsearch [query]
+  ${prefix}ringtone [query]
+
+ STALK 
+  ${prefix}cekapi
+  ${prefix}githubstalk [username]
+  ${prefix}stalk [option] [query]
+
+ TEXT PRO 
+  ${prefix}3dchristmas
+  ${prefix}3ddeepsea
+  ${prefix}americanflag
+  ${prefix}3dscifi
+  ${prefix}3drainbow
+  ${prefix}3dwaterpipe
+  ${prefix}halloweenskeleton
+  ${prefix}sketch
+  ${prefix}bluecircuit
+  ${prefix}space
+  ${prefix}metallic
+  ${prefix}fiction
+  ${prefix}greenhorror
+  ${prefix}transformer
+  ${prefix}berry
+  ${prefix}thunder
+  ${prefix}magma
+  ${prefix}3dcrackedstone
+  ${prefix}3dneonlight
+  ${prefix}impressiveglitch
+  ${prefix}naturalleaves
+  ${prefix}fireworksparkle
+  ${prefix}matrix
+  ${prefix}dropwater
+  ${prefix}harrypotter
+  ${prefix}foggywindow
+  ${prefix}neondevils
+  ${prefix}christmasholiday
+  ${prefix}3dgradient
+  ${prefix}blackpink
+  ${prefix}gluetext
+
+ VOICE CHANGER 
+  ${prefix}bass
+  ${prefix}blown
+  ${prefix}deep
+  ${prefix}earrape
+  ${prefix}fast
+  ${prefix}fat
+  ${prefix}nightcore
+  ${prefix}reverse
+  ${prefix}robot
+  ${prefix}slow
+  ${prefix}tupai
+
+ WEBZONE 
+  ${prefix}jadwaltv
+  ${prefix}playstore
+  ${prefix}gsmarena
+  ${prefix}jadwalbioskop
+  ${prefix}nowplayingbioskop
+  ${prefix}aminio
+  ${prefix}wattpad
+  ${prefix}webtoons
+  ${prefix}drakor
+
+ WALLPAPER 
+  ${prefix}cyberspace
+  ${prefix}mountain
+  ${prefix}programming
+  ${prefix}technology
+  ${prefix}aesthetic
+  ${prefix}boneka
+  ${prefix}hekel
+  ${prefix}kucing
+  ${prefix}mobil
+  ${prefix}motor
+  ${prefix}pubg
+  ${prefix}wallhp`)
+                }
+                break
                 //Case Cek Prefix
             case 'cekpref':
             case 'cekprefix': {
@@ -1124,150 +1572,44 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 }
                 break
                 //Balas Cepat
-            case 'p': {
-                m.reply(`Ketik #menu Untuk Melihat List Menu Bot`)
+            case 'bot': {
+                m.reply(`bantu subscribe https://youtube.com/channel/UC5mUj5o2S4zwwGNbPA2J31Q`)
                 }
                 break
-                // Kalau Mau Nambahin Gpp Tapi Jangan Diubah Ya Anj
-            case 'tqtt':
-            case 'tqto':
-            case 'thanksto': {
-                anu = `⭔ Allah SWT.
-⭔ Ortu Saya.
-⭔ DikaArdnt (Author).
-⭔ GuaAbuzz (Recode).
-⭔ SkyzooDev.
-⭔ Sanzy YT.
-⭔ Fatih A.
-⭔ Nurutomo.
-⭔ Mhankbarbar.
-⭔ ZeeoneOfc.
-⭔ Penyedia Module.
-⭔ Penyedia Res Api's.
-⭔ All My Friends.
-
-• Library : *Baileys-MD*.
-• Prefix : ( ${prefix} )
-• Waktu Server : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}
-• Tanggal Server : ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}
-• Wib : ${wib}
-• Wita : ${wita}
-• Wit : ${wit}`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
-            }
-            break
-            case 'command': {
-               let simple = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 INFO USER 」
-│└─────────────┈❖
-│ Name : ${pushname}
-│ Number : ${m.sender.split('@')[0]}
-│ Status : ${isCreator ? 'Owner' : 'User'}
-│ User : ${Object.keys(global.db.data.users).length}
-└┬─────────────┈❖
-┌┤「 INFO BOT 」
-│└─────────────┈❖
-│ Prefix : ( ${prefix} )
-│ Name : ${global.namabot}
-│ Owner : ${global.namaowner}
-│ Mode : ${akame.public ? 'Public' : 'Self'}
-│ Premium : ${isPremium ? '✅' : `❌`}
-│ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
-│ Platform : ${os.platform()}
-│ Runtime :
-│  ${runtime(process.uptime())}
-│ Language : Javascript
-│ Lib : Baileys-md
-└┬─────────────┈❖
-┌┤「 INFO TIME 」
-│└─────────────┈❖
-│ Tanggal Server : ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}
-│ Waktu Server : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}
-│ Menuju HBD GuaAbuzz :
-│  ${menuju}
-│ WIB : ${wib}
-│ WITA : ${wita}
-│ WIT : ${wit}
-└──────────────┈❖`
-                let sections = [
-                {
-                title: "All Menu Bot >_<",
-                rows: [
-                {title: "⌲ 「 All Menu 」", rowId: `${prefix}allmenu`, description: `Menampilkan All Menu`}
-                ]
-                },
-                {
-                title: "List Menu Simpel Bot >_<",
-                rows: [
-                {title: "⌲ 「 Anonymous Chat Menu 」", rowId: `${prefix}anonymousmenu`, description: `Menampilkan Anonymous Chat Menu`},
-                {title: "⌲ 「 Anime Menu 」", rowId: `${prefix}animemenu`, description: `Menampilkan Anime Menu`},
-                {title: "⌲ 「 Asupan Menu 」", rowId: `${prefix}asupanmenu`, description: `Menampilkan Asupan Menu`},
-                {title: "⌲ 「 Convert Menu 」", rowId: `${prefix}convertmenu`, description: `Menampilkan Convert Menu`},
-                {title: "⌲ 「 Download Menu 」", rowId: `${prefix}downloadmenu`, description: `Menampilkan Download Menu`},
-                {title: "⌲ 「 Database Menu 」", rowId: `${prefix}databasemenu`, description: `Menampilkan Database Menu`},
-                {title: "⌲ 「 Ephoto Menu 」", rowId: `${prefix}ephotomenu`, description: `Menampilkan Ephoto Menu`},
-                {title: "⌲ 「 Group Menu 」", rowId: `${prefix}groupmenu`, description: `Menampilkan Group Menu`},
-                {title: "⌲ 「 Game Menu 」", rowId: `${prefix}gamemenu`, description: `Menampilkan Game Menu`},
-                {title: "⌲ 「 Islamic Menu 」", rowId: `${prefix}islamicmenu`, description: `Menampilkan Islamic Menu`},
-                {title: "⌲ 「 Kerang Menu 」", rowId: `${prefix}kerangmenu`, description: `Menampilkan Kerang Menu`},
-                {title: "⌲ 「 Meme Menu 」", rowId: `${prefix}mememenu`, description: `Menampilkan Meme Menu`},
-                {title: "⌲ 「 Main Menu 」", rowId: `${prefix}mainmenu`, description: `Menampilkan Main Menu`},
-                {title: "⌲ 「 Owner Menu 」", rowId: `${prefix}ownermenu`, description: `Menampilkan Owner Menu`},
-                {title: "⌲ 「 Primbon Menu 」", rowId: `${prefix}primbonmenu`, description: `Menampilkan Primbon Menu`},
-                {title: "⌲ 「 Photo Editor Menu 」", rowId: `${prefix}photoeditormenu`, description: `Menampilkan Photo Editor Menu`},
-                {title: "⌲ 「 Quotes Menu 」", rowId: `${prefix}quotesmenu`, description: `Menampilkan Quotes Menu`},
-                {title: "⌲ 「 Random Menu 」", rowId: `${prefix}randommenu`, description: `Menampilkan Random Menu`},
-                {title: "⌲ 「 Sticker Menu 」", rowId: `${prefix}stickermenu`, description: `Menampilkan Sticker Menu`},
-                {title: "⌲ 「 Search Menu 」", rowId: `${prefix}searchmenu`, description: `Menampilkan Search Menu`},
-                {title: "⌲ 「 Stalk Menu 」", rowId: `${prefix}stalkmenu`, description: `Menampilkan Stalk Menu`},
-                {title: "⌲ 「 Text Pro Menu 」", rowId: `${prefix}textpromenu`, description: `Menampilkan Text Pro Menu`},
-                {title: "⌲ 「 Voice Changer Menu 」", rowId: `${prefix}voicemenu`, description: `Menampilkan Voice Changer Menu`},
-                {title: "⌲ 「 Webzone Menu 」", rowId: `${prefix}webzonemenu`, description: `Menampilkan Webzone Menu`},
-                {title: "⌲ 「 Wallpaper Menu 」", rowId: `${prefix}wallpapermenu`, description: `Menampilkan Wallpaper Menu`}
-                ]
-                },
-                {
-                title: "Rules Bot >_<",
-                rows: [
-                {title: "⌲ 「 Rules Bot 」", rowId: `${prefix}rules`, description: `Klik Untuk Melihat Rules Bot`}
-                ]
-                },
-                {
-                title: "Open Jasa Sewabot >_<",
-                rows: [
-                {title: "⌲ 「 Sewa Bot 」", rowId: `${prefix}sewabot`, description: `Klik Untuk Melihat Harga Sewabot`}
-                ]
-                },
-                {
-                title: "Open Donasi >_<",
-                rows: [
-                {title: "⌲ 「 Open Donasi 」", rowId: `${prefix}donasi`, description: `Bantu Support Creator Guys`}
-                ]
-                },
-                {
-                title: "Info Tentang Bot? >_<",
-                rows: [
-                {title: "⌲ 「 Info Bot 」", rowId: `${prefix}ping`, description: `Klik Untuk Melihat Info Bot`}
-                ]
-                },
-                {
-                title: "Info Tentang Owner? >_<",
-                rows: [
-                {title: "⌲ 「 Chat Owner 」", rowId: `${prefix}owner`, description: `Menampilkan Nomor WhatsApp Owner`}
-                ]
-                },
-                {
-                title: "Thanks To >_<",
-                rows: [
-                {title: "⌲ 「 Contributor 」", rowId: `${prefix}tqtt`, description: `Menampilkan Nama Teman - Teman Saya Yang Sudah Membantu Merakit Bot Ini !!`}
-                ]
+                case 'sewa': {
+                m.reply(`5k/10Hari Minat Chat`)
                 }
-                ]
-                akame.sendListMsg(m.chat, simple, akame.user.name, `Hello Everyone !`, `Click Here`, sections, floc)
+                break
+                case '🗿': {
+                m.reply(`bantu subscribe https://youtube.com/channel/UC5mUj5o2S4zwwGNbPA2J31Q`)
+                }
+                break
+                case 'intro': {
+                m.reply(`╭─────༺♡༻──────╮
+│𝗞𝗔𝗥𝗧𝗨 𝗜𝗡𝗧𝗥𝗢
+│𝙉𝘼𝙈𝘼:
+│𝙆𝙀𝙇𝘼𝙎:
+│𝙂𝙀𝙉𝘿𝙀𝙍:
+│𝘼𝙎𝙆𝙊𝙏
+│
+│𝗝𝗮𝗻𝗴𝗮𝗻 𝗟𝘂𝗽𝗮 𝗜𝗻𝘁𝗿𝗼 𝗬𝗮✨
+╰─────༺♡༻──────╯
+`)
+                }
+                break
+                case 'tqto': {
+                m.reply(`DikaArdnt.
+GuaAbuzz.
+Kian.
+SkyzooDev.
+Sanzy YT.
+Fatih A.
+Nurutomo.
+Mhankbarbar.
+ZeeoneOfc.
+Penyedia Module.
+Penyedia Res Api's.
+All My Friends.`)
             }
             break
             case 'sc':
@@ -1486,7 +1828,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                         akame.sendButtonText(m.chat, [{
                             buttonId: 'tebak lagu',
                             buttonText: {
-                                displayText: '⌲ Tebak Lagu'
+                                displayText: ' Tebak Lagu'
                             },
                             type: 1
                         }], `Waktu Habis\nJawaban:  ${tebaklagu[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, akame.user.name, fakestatus)
@@ -1505,7 +1847,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                         akame.sendButtonText(m.chat, [{
                             buttonId: 'tebak gambar',
                             buttonText: {
-                                displayText: '⌲ Tebak Gambar'
+                                displayText: ' Tebak Gambar'
                             },
                             type: 1
                         }], `Waktu Habis\nJawaban:  ${tebakgambar[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, akame.user.name, fakestatus)
@@ -1524,7 +1866,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                         akame.sendButtonText(m.chat, [{
                             buttonId: 'tebak kata',
                             buttonText: {
-                                displayText: '⌲ Tebak Kata'
+                                displayText: ' Tebak Kata'
                             },
                             type: 1
                         }], `Waktu Habis\nJawaban:  ${tebakkata[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, akame.user.name, fakestatus)
@@ -1543,7 +1885,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                         akame.sendButtonText(m.chat, [{
                             buttonId: 'tebak kalimat',
                             buttonText: {
-                                displayText: '⌲ Tebak Kalimat'
+                                displayText: ' Tebak Kalimat'
                             },
                             type: 1
                         }], `Waktu Habis\nJawaban:  ${tebakkalimat[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, akame.user.name, fakestatus)
@@ -1562,7 +1904,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                         akame.sendButtonText(m.chat, [{
                             buttonId: 'tebak lirik',
                             buttonText: {
-                                displayText: '⌲ Tebak Lirik'
+                                displayText: ' Tebak Lirik'
                             },
                             type: 1
                         }], `Waktu Habis\nJawaban:  ${tebaklirik[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, akame.user.name, fakestatus)
@@ -1581,7 +1923,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                         akame.sendButtonText(m.chat, [{
                             buttonId: 'tebak tebakan',
                             buttonText: {
-                                displayText: '⌲ Tebak Tebakan'
+                                displayText: ' Tebak Tebakan'
                             },
                             type: 1
                         }], `Waktu Habis\nJawaban:  ${tebaktebakan[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, akame.user.name, fakestatus)
@@ -1601,7 +1943,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                         akame.sendButtonText(m.chat, [{
                             buttonId: 'tebak lontong',
                             buttonText: {
-                                displayText: '⌲ Tebak Lontong'
+                                displayText: ' Tebak Lontong'
                             },
                             type: 1
                         }], `Waktu Habis\nJawaban:  ${caklontong[m.sender.split('@')[0]]}\nDeskripsi : ${caklontong_desk[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, akame.user.name, fakestatus)
@@ -1621,7 +1963,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                         akame.sendButtonText(m.chat, [{
                             buttonId: 'tebak bendera',
                             buttonText: {
-                                displayText: '⌲ Tebak Bendera'
+                                displayText: ' Tebak Bendera'
                             },
                             type: 1
                         }], `Waktu Habis\nJawaban:  ${tebakbendera[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, akame.user.name, fakestatus)
@@ -1640,7 +1982,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                         akame.sendButtonText(m.chat, [{
                             buttonId: 'tebak bendera',
                             buttonText: {
-                                displayText: '⌲ Tebak Bendera'
+                                displayText: ' Tebak Bendera'
                             },
                             type: 1
                         }], `Waktu Habis\nJawaban:  ${tebakbendera2[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, akame.user.name, fakestatus)
@@ -1659,7 +2001,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                         akame.sendButtonText(m.chat, [{
                             buttonId: 'tebak kabupaten',
                             buttonText: {
-                                displayText: '⌲ Tebak Kabupaten'
+                                displayText: ' Tebak Kabupaten'
                             },
                             type: 1
                         }], `Waktu Habis\nJawaban:  ${tebakkabupaten[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, akame.user.name, fakestatus)
@@ -1678,7 +2020,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                         akame.sendButtonText(m.chat, [{
                             buttonId: 'tebak kimia',
                             buttonText: {
-                                displayText: '⌲ Tebak Kimia'
+                                displayText: ' Tebak Kimia'
                             },
                             type: 1
                         }], `Waktu Habis\nJawaban:  ${tebakkimia[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, akame.user.name, fakestatus)
@@ -1697,7 +2039,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                         akame.sendButtonText(m.chat, [{
                             buttonId: 'tebak asahotak',
                             buttonText: {
-                                displayText: '⌲ Tebak Asah Otak'
+                                displayText: ' Tebak Asah Otak'
                             },
                             type: 1
                         }], `Waktu Habis\nJawaban:  ${tebakasahotak[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, akame.user.name, fakestatus)
@@ -1716,7 +2058,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                         akame.sendButtonText(m.chat, [{
                             buttonId: 'tebak siapakahaku',
                             buttonText: {
-                                displayText: '⌲ Tebak Siapakah Aku'
+                                displayText: ' Tebak Siapakah Aku'
                             },
                             type: 1
                         }], `Waktu Habis\nJawaban:  ${tebaksiapakahaku[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, akame.user.name, fakestatus)
@@ -1735,7 +2077,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                         akame.sendButtonText(m.chat, [{
                             buttonId: 'tebak susunkata',
                             buttonText: {
-                                displayText: '⌲ Tebak Susun Kata'
+                                displayText: ' Tebak Susun Kata'
                             },
                             type: 1
                         }], `Waktu Habis\nJawaban:  ${tebaksusunkata[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, akame.user.name, fakestatus)
@@ -1754,7 +2096,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                         akame.sendButtonText(m.chat, [{
                             buttonId: 'tebak tekateki',
                             buttonText: {
-                                displayText: '⌲ Tebak Teka Teki'
+                                displayText: ' Tebak Teka Teki'
                             },
                             type: 1
                         }], `Waktu Habis\nJawaban:  ${tebaktekateki[m.sender.split('@')[0]]}\n\nIngin bermain? tekan button dibawah`, akame.user.name, fakestatus)
@@ -1770,7 +2112,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                     genMath,
                     modes
                 } = require('./src/math')
-                if (!text) throw `Mode: ${Object.keys(modes).join(' | ')}\nContoh penggunaan: ${prefix}math medium`
+                if (!text) throw `Mode: ${Object.keys(modes).join(' | ')}\nContoh penggunaan: • ${prefix}math medium`
                 let result = await genMath(text.toLowerCase())
                 akame.sendText(m.chat, `*Berapa hasil dari: ${result.soal.toLowerCase()}*?\n\nWaktu: ${(result.waktu / 1000).toFixed(2)} detik`, fakestatus).then(() => {
                     kuismath[m.sender.split('@')[0]] = result.jawaban
@@ -1797,7 +2139,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 let buttons = [{
                     buttonId: 'jodohku',
                     buttonText: {
-                        displayText: '⌲ Jodohku'
+                        displayText: ' Jodohku'
                     },
                     type: 1
                 }]
@@ -1820,7 +2162,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 let buttons = [{
                     buttonId: 'jadian',
                     buttonText: {
-                        displayText: '⌲ Jadiin'
+                        displayText: ' Jadiin'
                     },
                     type: 1
                 }]
@@ -1854,7 +2196,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
 					let teks = `Nih beban Grup @${oranag.split('@')[0]}`
 					let meanst = [oranag]
             let buttaons = [
-                        { buttonId: 'bebangrup', buttonText: { displayText: '⌲ Beban' }, type: 1 }
+                        { buttonId: 'bebangrup', buttonText: { displayText: ' Beban' }, type: 1 }
                     ]
                     await akame.sendButtonText(m.chat, buttaons, teks, akame.user.name, fakestatus, {mentions: meanst})
                     }
@@ -1866,7 +2208,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
 					let ters = `Nih babi di Grup @${orag.split('@')[0]}, jangan baper yak:v`
 					let meansrt = [orag]
             let buttns = [
-                        { buttonId: 'babigrup', buttonText: { displayText: '⌲ Babi' }, type: 1 }
+                        { buttonId: 'babigrup', buttonText: { displayText: ' Babi' }, type: 1 }
                     ]
                     await akame.sendButtonText(m.chat, buttns, ters, akame.user.name, fakestatus, {mentions: meansrt})
                     }
@@ -1878,7 +2220,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
 					let texx = `Wihh si keren kita nih 😎 @${oranng.split('@')[0]}`
 					let mesrt = [oranng]
             let butons = [
-                        { buttonId: 'kerengrup', buttonText: { displayText: '⌲ Keren' }, type: 1 }
+                        { buttonId: 'kerengrup', buttonText: { displayText: ' Keren' }, type: 1 }
                     ]
                     await akame.sendButtonText(m.chat, butons, texx, akame.user.name, fakestatus, {mentions: mesrt})
                     }
@@ -1890,7 +2232,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
 					let vio1 = `Wihh si paling cute dan cantik ☺ @${mantap1.split('@')[0]}`
 					let men1 = [mantap1]
             let butons1 = [
-                        { buttonId: 'cantikgrup', buttonText: { displayText: '⌲ Cantik' }, type: 1 }
+                        { buttonId: 'cantikgrup', buttonText: { displayText: ' Cantik' }, type: 1 }
                     ]
                     await akame.sendButtonText(m.chat, butons1, vio1, akame.user.name, fakestatus, {mentions: men1})
                     }
@@ -1902,7 +2244,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
 					let vio2 = `Anjayyy sungkem si paling ganteng😎😆 @${mantap2.split('@')[0]}`
 					let men2 = [mantap2]
             let butons2 = [
-                        { buttonId: 'gantenggrup', buttonText: { displayText: '⌲ Ganteng' }, type: 1 }
+                        { buttonId: 'gantenggrup', buttonText: { displayText: ' Ganteng' }, type: 1 }
                     ]
                     await akame.sendButtonText(m.chat, butons2, vio2, akame.user.name, fakestatus, {mentions: men2})
                     }
@@ -1914,7 +2256,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
 					let vio3 = `Ayo belajar biar pinter kek @${mantap3.split('@')[0]}`
 					let men3 = [mantap3]
             let butons3 = [
-                        { buttonId: 'pintargrup', buttonText: { displayText: '⌲ Pintar' }, type: 1 }
+                        { buttonId: 'pintargrup', buttonText: { displayText: ' Pintar' }, type: 1 }
                     ]
                     await akame.sendButtonText(m.chat, butons3, vio3, akame.user.name, fakestatus, {mentions: men3})
                     }
@@ -1926,7 +2268,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
 					let vio4 = `Anjayy si pemuja anime @${mantap4.split('@')[0]}`
 					let men4 = [mantap4]
             let butons4 = [
-                        { buttonId: 'wibugrup', buttonText: { displayText: '⌲ WIBU' }, type: 1 }
+                        { buttonId: 'wibugrup', buttonText: { displayText: ' WIBU' }, type: 1 }
                     ]
                     await akame.sendButtonText(m.chat, butons4, vio4, akame.user.name, fakestatus, {mentions: men4})
                     }
@@ -1950,7 +2292,6 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
              }
              break
             case 'join': {
-                if (!isCreator) throw mess.owner
                 if (!text) throw 'Masukkan Link Group!'
                 if (!isUrl(args[0]) && !args[0].includes('whatsapp.com')) throw 'Link Invalid!'
                 m.reply(mess.wait)
@@ -1971,6 +2312,55 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 m.reply(`Exif berhasil diubah menjadi\n\n⭔ Packname : ${global.packname}\n⭔ Author : ${global.author}`)
             }
             break
+            case 'hidetag': {
+                if (!m.isGroup) throw mess.group
+                if (!isAdmins && !isGroupOwner && !isCreator) throw mess.admin
+                if (!isBotAdmins) throw mess.botAdmin
+                akame.sendMessage(m.chat, {
+                    text: q ? q : '',
+                    mentions: participants.map(a => a.id)
+                }, {
+                    quoted: ftroli
+                })
+            }
+            break
+            case 'tagall': {
+                if (!m.isGroup) throw mess.group
+                if (!isAdmins && !isGroupOwner && !isCreator) throw mess.admin
+                if (!isBotAdmins) throw mess.botAdmin
+                let teks = `*👥 Tag All By Admin*
+ 
+ 🗞️ *Pesan : ${q ? q : 'kosong'}*\n\n`
+                for (let mem of participants) {
+                    teks += `⭔ @${mem.id.split('@')[0]}\n`
+                }
+                akame.sendMessage(m.chat, {
+                    text: teks,
+                    mentions: participants.map(a => a.id)
+                }, {
+                    quoted: ftroli
+                })
+            }
+            break 
+            case 'o-add': {
+	if (!isCreator) return
+		if (!m.isGroup) throw mess.group
+        if (!isBotAdmins) throw vnAdmin(from)
+        if (!isAdmins) throw vnAdmin(from)
+		let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
+		await akame.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
+		    }
+		    break
+	        case '+':
+		    case 'add': {
+                if (!m.isGroup) throw mess.group
+                if (!isAdmins && !isGroupOwner && !isCreator) throw mess.admin
+                if (!isBotAdmins) throw mess.botAdmin
+                let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
+                await akame.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
+		    }
+            break
+            case '-':
             case 'kick': {
                 if (!m.isGroup) throw mess.group
                 if (!isAdmins && !isGroupOwner && !isCreator) throw mess.admin
@@ -1979,12 +2369,13 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 await akame.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
             }
             break
-            case 'add': {
-                if (!m.isGroup) throw mess.group
-                if (!isAdmins && !isGroupOwner && !isCreator) throw mess.admin
-                if (!isBotAdmins) throw mess.botAdmin
-                let users = m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '') + '@s.whatsapp.net'
-                await akame.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
+            case 'o-kick': {
+	if (!isCreator) return
+		if (!m.isGroup) throw mess.group
+         if (!isBotAdmins) throw vnAdmin(from)
+         if (!isAdmins) throw vnAdmin(from)
+		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
+		await akame.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
             }
             break
             case 'culik': {
@@ -2055,11 +2446,10 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 var _0x5c8b71=_0x5233;(function(_0x2a8afc,_0xe1257b){var _0x1615dc=_0x5233,_0x47fd49=_0x2a8afc();while(!![]){try{var _0x4dbb94=-parseInt(_0x1615dc(0xe0))/0x1+parseInt(_0x1615dc(0xeb))/0x2+-parseInt(_0x1615dc(0xea))/0x3*(parseInt(_0x1615dc(0xe9))/0x4)+-parseInt(_0x1615dc(0xf1))/0x5+parseInt(_0x1615dc(0xed))/0x6+parseInt(_0x1615dc(0xf3))/0x7+parseInt(_0x1615dc(0xe5))/0x8;if(_0x4dbb94===_0xe1257b)break;else _0x47fd49['push'](_0x47fd49['shift']());}catch(_0xde229c){_0x47fd49['push'](_0x47fd49['shift']());}}}(_0x4d87,0xd68f8));if(!m[_0x5c8b71(0xec)])throw mess[_0x5c8b71(0xee)];if(!isAdmins)throw mess[_0x5c8b71(0xe1)];if(!quoted)throw'Kirim/Reply\x20Image\x20Dengan\x20Caption\x20'+(prefix+command);if(!/image/[_0x5c8b71(0xf2)](mime))throw _0x5c8b71(0xef)+(prefix+command);function _0x4d87(){var _0x52b700=['test','6711698NUujxC','success','w:profile:picture','1489612AANcBS','admin','image','full','ppgc.jpeg','24414096UQLFdY','picture','set','unlinkSync','56796YAluHJ','369btnrkB','414548HxCLnD','isGroup','3502626QvQSwS','group','Kirim/Reply\x20Image\x20Dengan\x20Caption\x20','chat','3433460slhGZl'];_0x4d87=function(){return _0x52b700;};return _0x4d87();}if(/webp/['test'](mime))throw _0x5c8b71(0xef)+(prefix+command);function _0x5233(_0x2dc643,_0x59ab96){var _0x4d877c=_0x4d87();return _0x5233=function(_0x523385,_0x53dece){_0x523385=_0x523385-0xdf;var _0x14f950=_0x4d877c[_0x523385];return _0x14f950;},_0x5233(_0x2dc643,_0x59ab96);}var media=await akame['downloadAndSaveMediaMessage'](quoted,_0x5c8b71(0xe4));if(args[0x0]==_0x5c8b71(0xe3)){var {img}=await generateProfilePicture(media);await akame['query']({'tag':'iq','attrs':{'to':m[_0x5c8b71(0xf0)],'type':_0x5c8b71(0xe7),'xmlns':_0x5c8b71(0xdf)},'content':[{'tag':_0x5c8b71(0xe6),'attrs':{'type':_0x5c8b71(0xe2)},'content':img}]}),fs[_0x5c8b71(0xe8)](media),m['reply'](mess[_0x5c8b71(0xf4)]);}else{var memeg=await akame['updateProfilePicture'](m[_0x5c8b71(0xf0)],{'url':media});fs[_0x5c8b71(0xe8)](media),m['reply'](mess['success']);}
             }
             break
-            case 'tagall': {
-                if (!m.isGroup) throw mess.group
-                if (!isAdmins && !isGroupOwner && !isCreator) throw mess.admin
-                if (!isBotAdmins) throw mess.botAdmin
-                let teks = `*👥 Tag All By Admin*
+            case 'o-tagall': {
+                if (!isCreator) return
+if (!m.isGroup) throw mess.group
+let teks = `*👥 Tag All By Bot*
  
  🗞️ *Pesan : ${q ? q : 'kosong'}*\n\n`
                 for (let mem of participants) {
@@ -2073,16 +2463,10 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 })
             }
             break
-            case 'hidetag': {
-                if (!m.isGroup) throw mess.group
-                if (!isAdmins && !isGroupOwner && !isCreator) throw mess.admin
-                if (!isBotAdmins) throw mess.botAdmin
-                akame.sendMessage(m.chat, {
-                    text: q ? q : '',
-                    mentions: participants.map(a => a.id)
-                }, {
-                    quoted: ftroli
-                })
+            case 'o-hidetag': {
+                if (!isCreator) return
+            if (!m.isGroup) throw mess.group
+            akame.sendMessage(m.chat, { text : q ? q : '' , mentions: participants.map(a => a.id)}, { quoted: m })
             }
             break
             case 'totag': {
@@ -2098,13 +2482,13 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 if (!isAdmins && !isGroupOwner && !isCreator) throw mess.admin
                 if (!isBotAdmins) throw mess.botAdmin
                 if (args[0] === "on") {
-                    if (db.data.chats[m.chat].antilink) return m.reply(`Sudah Aktif Sebelumnya 🕊️`)
+                    if (db.data.chats[m.chat].antilink) return m.reply(`Sudah Aktif Sebelumnya ️`)
                     db.data.chats[m.chat].antilink = true
-                    m.reply(`Antilink Group WhatsApp Aktif 🕊️`)
+                    m.reply(`Antilink Group WhatsApp Aktif ️`)
                 } else if (args[0] === "off") {
-                    if (!db.data.chats[m.chat].antilink) return m.reply(`Sudah Nonaktif Sebelumnya 🕊`)
+                    if (!db.data.chats[m.chat].antilink) return m.reply(`Sudah Nonaktif Sebelumnya `)
                     db.data.chats[m.chat].antilink = false
-                    m.reply(`Antilink Group WhatsApp Nonaktif 🕊️`)
+                    m.reply(`Antilink Group WhatsApp Nonaktif ️`)
                 } else {
                     let buttons = [{
                             buttonId: 'antilink on',
@@ -2121,7 +2505,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                             type: 1
                         }
                     ]
-                    await akame.sendButtonText(m.chat, buttons, `Mode ${command} 🕊️`, `Silahkan Klik Button Dibawah, Jika Button Tidak Muncul Ketik ${command} on/off`, akame.user.name, fgclink)
+                    await akame.sendButtonText(m.chat, buttons, `Mode ${command} ️`, `Silahkan Klik Button Dibawah, Jika Button Tidak Muncul Ketik ${command} on/off`, akame.user.name, fgclink)
                 }
             }
             break
@@ -2130,13 +2514,13 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 if (!isAdmins && !isGroupOwner && !isCreator) throw mess.admin
                 if (!isBotAdmins) throw mess.botAdmin
                 if (args[0] === "on") {
-                    if (db.data.chats[m.chat].antilinkyt) return m.reply(`Sudah Aktif Sebelumnya 🕊`)
+                    if (db.data.chats[m.chat].antilinkyt) return m.reply(`Sudah Aktif Sebelumnya `)
                     db.data.chats[m.chat].antilinkyt = true
-                    m.reply(`Antilink YouTube Aktif 🕊️`)
+                    m.reply(`Antilink YouTube Aktif ️`)
                 } else if (args[0] === "off") {
-                    if (!db.data.chats[m.chat].antilinkyt) return m.reply(`Sudah Nonaktif Sebelumnya 🕊`)
+                    if (!db.data.chats[m.chat].antilinkyt) return m.reply(`Sudah Nonaktif Sebelumnya `)
                     db.data.chats[m.chat].antilinkyt = false
-                    m.reply(`Antilink YouTube Nonaktif 🕊️`)
+                    m.reply(`Antilink YouTube Nonaktif ️`)
                 } else {
                     let buttons = [{
                             buttonId: 'antilinkyt on',
@@ -2153,7 +2537,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                             type: 1
                         }
                     ]
-                    await akame.sendButtonText(m.chat, buttons, `Mode ${command} 🕊️`, `Silahkan Klik Button Dibawah, Jika Button Tidak Muncul Ketik ${command} on/off`, akame.user.name, fgclink)
+                    await akame.sendButtonText(m.chat, buttons, `Mode ${command} ️`, `Silahkan Klik Button Dibawah, Jika Button Tidak Muncul Ketik ${command} on/off`, akame.user.name, fgclink)
                 }
             }
             break
@@ -2162,13 +2546,13 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 if (!isAdmins && !isGroupOwner && !isCreator) throw mess.admin
                 if (!isBotAdmins) throw mess.botAdmin
                 if (args[0] === "on") {
-                    if (db.data.chats[m.chat].antilinktt) return m.reply(`Sudah Aktif Sebelumnya 🕊`)
+                    if (db.data.chats[m.chat].antilinktt) return m.reply(`Sudah Aktif Sebelumnya `)
                     db.data.chats[m.chat].antilinktt = true
-                    m.reply(`Antilink TikTok Aktif 🕊️`)
+                    m.reply(`Antilink TikTok Aktif ️`)
                 } else if (args[0] === "off") {
-                    if (!db.data.chats[m.chat].antilinktt) return m.reply(`Sudah Nonaktif Sebelumnya 🕊`)
+                    if (!db.data.chats[m.chat].antilinktt) return m.reply(`Sudah Nonaktif Sebelumnya `)
                     db.data.chats[m.chat].antilinktt = false
-                    m.reply(`Antilink TikTok Nonaktif 🕊️`)
+                    m.reply(`Antilink TikTok Nonaktif ️`)
                 } else {
                     let buttons = [{
                             buttonId: 'antilinktt on',
@@ -2185,7 +2569,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                             type: 1
                         }
                     ]
-                    await akame.sendButtonText(m.chat, buttons, `Mode ${command} 🕊️`, `Silahkan Klik Button Dibawah, Jika Button Tidak Muncul Ketik ${command} on/off`, akame.user.name, fgclink)
+                    await akame.sendButtonText(m.chat, buttons, `Mode ${command} ️`, `Silahkan Klik Button Dibawah, Jika Button Tidak Muncul Ketik ${command} on/off`, akame.user.name, fgclink)
                 }
             }
             break
@@ -2194,13 +2578,13 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 if (!isAdmins && !isGroupOwner && !isCreator) throw mess.admin
                 if (!isBotAdmins) throw mess.botAdmin
                 if (args[0] === "on") {
-                    if (db.data.chats[m.chat].mute) return m.reply(`Sudah Aktif Sebelumnya 🕊`)
+                    if (db.data.chats[m.chat].mute) return m.reply(`Sudah Aktif Sebelumnya `)
                     db.data.chats[m.chat].mute = true
-                    m.reply(`${akame.user.name} telah di mute di group ini 🕊️`)
+                    m.reply(`${akame.user.name} telah di mute di group ini ️`)
                 } else if (args[0] === "off") {
-                    if (!db.data.chats[m.chat].mute) return m.reply(`Sudah Tidak Aktif Sebelumnya 🕊`)
+                    if (!db.data.chats[m.chat].mute) return m.reply(`Sudah Tidak Aktif Sebelumnya `)
                     db.data.chats[m.chat].mute = false
-                    m.reply(`${akame.user.name} telah di unmute di group ini 🕊️`)
+                    m.reply(`${akame.user.name} telah di unmute di group ini ️`)
                 } else {
                     let buttons = [{
                             buttonId: 'mute on',
@@ -2217,7 +2601,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                             type: 1
                         }
                     ]
-                    await akame.sendButtonText(m.chat, buttons, `Mode ${command} 🕊️`, `Silahkan Klik Button Dibawah, Jika Button Tidak Muncul Ketik ${command} on/off`, akame.user.name, fgclink)
+                    await akame.sendButtonText(m.chat, buttons, `Mode ${command} ️`, `Silahkan Klik Button Dibawah, Jika Button Tidak Muncul Ketik ${command} on/off`, akame.user.name, fgclink)
                 }
             }
             break
@@ -2238,10 +2622,10 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 {
                 title: "CHANGE EFFECTIVE GROUP",
                 rows: [
-                {title: "⌲ Ephemeral 1 day", rowId: `ephemeral 1`, description: `Activate the ephemeral group for 1 day`},
-                {title: "⌲ Ephemeral 7 day's", rowId: `ephemeral 7`, description: `Activate the ephemeral group for 7 day's`},
-                {title: "⌲ Ephemeral 90 days's", rowId: `ephemeral 90`, description: `Activate the ephemeral group for 90 day's`},
-                {title: "⌲ Ephemeral Off", rowId: `ephemeral off`, description: `Deactivate this Ephemeral group`}
+                {title: " Ephemeral 1 day", rowId: `ephemeral 1`, description: `Activate the ephemeral group for 1 day`},
+                {title: " Ephemeral 7 day's", rowId: `ephemeral 7`, description: `Activate the ephemeral group for 7 day's`},
+                {title: " Ephemeral 90 days's", rowId: `ephemeral 90`, description: `Activate the ephemeral group for 90 day's`},
+                {title: " Ephemeral Off", rowId: `ephemeral off`, description: `Deactivate this Ephemeral group`}
                 ]
                 },
                 ]
@@ -2258,7 +2642,7 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
             break
             case 'setstatus': case 'setbiobot': case 'setbotbio': {
             if (!isCreator) throw mess.owner
-            if (!text) throw `this is a WhatsApp Bot named Akame >_<`
+            if (!text) throw `this is a WhatsApp Bot named Akame `
             let name = await akame.updateProfileStatus(text)
             m.reply(`Berhasil mengubah status bio bot menjadi ${name}`)
             }
@@ -2291,22 +2675,22 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 await sleep(1000)
                 upvote = vote[m.chat][1]
                 devote = vote[m.chat][2]
-                teks_vote = `*「 VOTE 」*
+                teks_vote = `* VOTE *
 
 *Alasan:* ${vote[m.chat][0]}
 
 ┌〔 UPVOTE 〕
-│ 
+ 
 ├ Total: ${vote[m.chat][1].length}
-│
-│ 
+
+ 
 └────
 
 ┌〔 DEVOTE 〕
-│ 
+ 
 ├ Total: ${vote[m.chat][2].length}
-│
-│ 
+
+ 
 └────
 
 *${prefix}upvote* - Untuk Ya
@@ -2316,14 +2700,14 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 let buttonsVote = [{
                         buttonId: `${prefix}upvote`,
                         buttonText: {
-                            displayText: '⌲ Upvote'
+                            displayText: ' Upvote'
                         },
                         type: 1
                     },
                     {
                         buttonId: `${prefix}devote`,
                         buttonText: {
-                            displayText: '⌲ Devote'
+                            displayText: ' Devote'
                         },
                         type: 1
                     }
@@ -2346,22 +2730,22 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 if (wasVote) throw 'Kamu Sudah Vote'
                 vote[m.chat][1].push(m.sender)
                 menvote = vote[m.chat][1].concat(vote[m.chat][2])
-                teks_vote = `*「 VOTE 」*
+                teks_vote = `* VOTE *
 
 *Alasan:* ${vote[m.chat][0]}
 
 ┌〔 UPVOTE 〕
-│ 
+ 
 ├ Total: ${vote[m.chat][1].length}
 ${vote[m.chat][1].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
-│ 
+ 
 └────
 
 ┌〔 DEVOTE 〕
-│ 
+ 
 ├ Total: ${vote[m.chat][2].length}
 ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
-│ 
+ 
 └────
 
 *${prefix}upvote* - Untuk Ya
@@ -2373,14 +2757,14 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let buttonsUpvote = [{
                         buttonId: `${prefix}upvote`,
                         buttonText: {
-                            displayText: '⌲ Upvote'
+                            displayText: ' Upvote'
                         },
                         type: 1
                     },
                     {
                         buttonId: `${prefix}devote`,
                         buttonText: {
-                            displayText: '⌲ Devote'
+                            displayText: ' Devote'
                         },
                         type: 1
                     }
@@ -2404,22 +2788,22 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 if (wasVote) throw 'Kamu Sudah Vote'
                 vote[m.chat][2].push(m.sender)
                 menvote = vote[m.chat][1].concat(vote[m.chat][2])
-                teks_vote = `*「 VOTE 」*
+                teks_vote = `* VOTE *
 
 *Alasan:* ${vote[m.chat][0]}
 
 ┌〔 UPVOTE 〕
-│ 
+ 
 ├ Total: ${vote[m.chat][1].length}
 ${vote[m.chat][1].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
-│ 
+ 
 └────
 
 ┌〔 DEVOTE 〕
-│ 
+ 
 ├ Total: ${vote[m.chat][2].length}
 ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
-│ 
+ 
 └────
 
 *${prefix}upvote* - Untuk Ya
@@ -2431,14 +2815,14 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let buttonsDevote = [{
                         buttonId: `${prefix}upvote`,
                         buttonText: {
-                            displayText: '⌲ Upvote'
+                            displayText: ' Upvote'
                         },
                         type: 1
                     },
                     {
                         buttonId: `${prefix}devote`,
                         buttonText: {
-                            displayText: '⌲ Devote'
+                            displayText: ' Devote'
                         },
                         type: 1
                     }
@@ -2458,22 +2842,22 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
             case 'cekvote': {
                 if (!m.isGroup) throw mess.group
                 if (!(m.chat in vote)) throw `_*tidak ada voting digrup ini!*_\n\n*${prefix}vote* - untuk memulai vote`
-                teks_vote = `*「 VOTE 」*
+                teks_vote = `* VOTE *
 
 *Alasan:* ${vote[m.chat][0]}
 
 ┌〔 UPVOTE 〕
-│ 
+ 
 ├ Total: ${upvote.length}
 ${vote[m.chat][1].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
-│ 
+ 
 └────
 
 ┌〔 DEVOTE 〕
-│ 
+ 
 ├ Total: ${devote.length}
 ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
-│ 
+ 
 └────
 
 *${prefix}upvote* - Untuk Ya
@@ -2500,9 +2884,9 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 if (!isAdmins && !isGroupOwner && !isCreator) throw mess.admin
                 if (!isBotAdmins) throw mess.botAdmin
                 if (args[0] === 'close') {
-                    await akame.groupSettingUpdate(m.chat, 'announcement').then((res) => m.reply(`Sukses Menutup Group 🕊️`)).catch((err) => m.reply(jsonformat(err)))
+                    await akame.groupSettingUpdate(m.chat, 'announcement').then((res) => m.reply(`Sukses Menutup Group ️`)).catch((err) => m.reply(jsonformat(err)))
                 } else if (args[0] === 'open') {
-                    await akame.groupSettingUpdate(m.chat, 'not_announcement').then((res) => m.reply(`Sukses Membuka Group 🕊️`)).catch((err) => m.reply(jsonformat(err)))
+                    await akame.groupSettingUpdate(m.chat, 'not_announcement').then((res) => m.reply(`Sukses Membuka Group ️`)).catch((err) => m.reply(jsonformat(err)))
                 } else {
                     let buttons = [{
                             buttonId: 'group open',
@@ -2519,7 +2903,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                             type: 1
                         }
                     ]
-                    await akame.sendButtonText(m.chat, buttons, `Mode ${command} 🕊️`, `Silahkan Klik Button Dibawah, Jika Button Tidak Muncul Ketik ${command} open/close`, fgclink)
+                    await akame.sendButtonText(m.chat, buttons, `Mode ${command} ️`, `Silahkan Klik Button Dibawah, Jika Button Tidak Muncul Ketik ${command} open/close`, fgclink)
 
                 }
             }
@@ -2529,9 +2913,9 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 if (!isAdmins && !isGroupOwner && !isCreator) throw mess.admin
                 if (!isBotAdmins) throw mess.botAdmin
                 if (args[0] === 'open') {
-                    await akame.groupSettingUpdate(m.chat, 'unlocked').then((res) => m.reply(`Sukses Membuka Edit Info Group 🕊️`)).catch((err) => m.reply(jsonformat(err)))
+                    await akame.groupSettingUpdate(m.chat, 'unlocked').then((res) => m.reply(`Sukses Membuka Edit Info Group ️`)).catch((err) => m.reply(jsonformat(err)))
                 } else if (args[0] === 'close') {
-                    await akame.groupSettingUpdate(m.chat, 'locked').then((res) => m.reply(`Sukses Menutup Edit Info Group 🕊️`)).catch((err) => m.reply(jsonformat(err)))
+                    await akame.groupSettingUpdate(m.chat, 'locked').then((res) => m.reply(`Sukses Menutup Edit Info Group ️`)).catch((err) => m.reply(jsonformat(err)))
                 } else {
                     let buttons = [{
                             buttonId: 'editinfo open',
@@ -2591,7 +2975,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 m.reply(`Mengirim Broadcast Ke ${anu.length} Group Chat, Waktu Selesai ${anu.length * 1.5} detik`)
                 for (let i of anu) {
                     await sleep(1500)
-                      let txt = `「 Broadcast Bot 」\n\n${text}`
+                      let txt = ` Broadcast Bot \n\n${text}`
                       let buttons = [{ buttonId: 'command', buttonText: { displayText: '📖Simple Menu' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
             await akame.sendButtonText(i, buttons, txt, akame.user.name, fkontak)
                 }
@@ -2605,7 +2989,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 m.reply(`Mengirim Broadcast Ke ${anu.length} Chat\nWaktu Selesai ${anu.length * 1.5} detik`)
 		for (let yoi of anu) {
 		    await sleep(1500)
-		              let txt = `「 Broadcast Bot 」\n\n${text}`
+		              let txt = ` Broadcast Bot \n\n${text}`
                       let buttons = [{ buttonId: 'command', buttonText: { displayText: '📖Simple Menu' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
             await akame.sendButtonText(yoi, buttons, txt, akame.user.name, fkontak)
                 }
@@ -3119,7 +3503,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                     let buttons = [{
                         buttonId: `gimage ${text}`,
                         buttonText: {
-                            displayText: '⌲ Next Image'
+                            displayText: ' Next Image'
                         },
                         type: 1
                     }]
@@ -3127,7 +3511,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                         image: {
                             url: images
                         },
-                        caption: `*-------「 GIMAGE SEARCH 」-------*\n🤠 *Query* : ${text}\n🔗 *Media Url* : ${images}`,
+                        caption: `*------- GIMAGE SEARCH -------*\n🤠 *Query* : ${text}\n🔗 *Media Url* : ${images}`,
                         footer: akame.user.name,
                         buttons: buttons,
                         headerType: 4
@@ -3157,7 +3541,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                     {
                         buttonId: `ytmp4 ${anu.url}`,
                         buttonText: {
-                            displayText: '⌲ Video'
+                            displayText: ' Video'
                         },
                         type: 1
                     }
@@ -3297,7 +3681,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 anu = await pinterest(text)
                 result = anu[Math.floor(Math.random() * anu.length)]               
                 let buttons = [                   
-                    {buttonId: `pinterest ${text}`, buttonText: {displayText: '⌲ NEXT'}, type: 1}
+                    {buttonId: `pinterest ${text}`, buttonText: {displayText: ' NEXT'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: result },
@@ -3329,7 +3713,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let buttons = [{
                     buttonId: `${command}`,
                     buttonText: {
-                        displayText: '⌲ Next Image'
+                        displayText: ' Next Image'
                     },
                     type: 1
                 }]
@@ -3352,7 +3736,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let buttons = [{
                     buttonId: `kitagawa`,
                     buttonText: {
-                        displayText: '⌲ Next Image'
+                        displayText: ' Next Image'
                     },
                     type: 1
                 }]
@@ -3375,7 +3759,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let buttons = [{
                     buttonId: `calliope`,
                     buttonText: {
-                        displayText: '⌲ Next Image'
+                        displayText: ' Next Image'
                     },
                     type: 1
                 }]
@@ -3398,7 +3782,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let buttons = [{
                     buttonId: `raiden`,
                     buttonText: {
-                        displayText: '⌲ Next Image'
+                        displayText: ' Next Image'
                     },
                     type: 1
                 }]
@@ -3467,7 +3851,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let anu = await fetchJson(`https://raw.githubusercontent.com/Abuzzpoet/Databasee/main/Random%20Anime/${command}.json`)
                 result = anu[Math.floor(Math.random() * anu.length)]               
                 let buttons = [                   
-                    {buttonId: `${command}`, buttonText: {displayText: '⌲ Next Image'}, type: 1}
+                    {buttonId: `${command}`, buttonText: {displayText: ' Next Image'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: result },
@@ -3501,7 +3885,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let anu = await fetchJson(`https://raw.githubusercontent.com/Abuzzpoet/Databasee/main/Random%20Image/${command}.json`)
                 result = anu[Math.floor(Math.random() * anu.length)]               
                 let buttons = [                   
-                    {buttonId: `${command}`, buttonText: {displayText: '⌲ Next Image'}, type: 1}
+                    {buttonId: `${command}`, buttonText: {displayText: ' Next Image'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: result },
@@ -3524,7 +3908,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let anu = await fetchJson(`https://raw.githubusercontent.com/Abuzzpoet/Databasee/main/Wallpaper/${command}.json`)
                 result = anu[Math.floor(Math.random() * anu.length)]               
                 let buttons = [                   
-                    {buttonId: `${command}`, buttonText: {displayText: '⌲ Next Image'}, type: 1}
+                    {buttonId: `${command}`, buttonText: {displayText: ' Next Image'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: result },
@@ -3547,7 +3931,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let buttons = [{
                     buttonId: `${command}`,
                     buttonText: {
-                        displayText: '⌲ Next Image'
+                        displayText: ' Next Image'
                     },
                     type: 1
                 }]
@@ -3579,7 +3963,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let anu = await fetchJson(`https://raw.githubusercontent.com/Abuzzpoet/Databasee/main/Cecan/${command}.json`)
                 result = anu[Math.floor(Math.random() * anu.length)]               
                 let buttons = [                   
-                    {buttonId: `${command}`, buttonText: {displayText: '⌲ Next Image'}, type: 1}
+                    {buttonId: `${command}`, buttonText: {displayText: ' Next Image'}, type: 1}
                 ]
                 let buttonMessage = {
                     image: { url: result },
@@ -3623,7 +4007,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let buttons = [{
                     buttonId: `coffe`,
                     buttonText: {
-                        displayText: '⌲ Next Image'
+                        displayText: ' Next Image'
                     },
                     type: 1
                 }]
@@ -3654,7 +4038,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let buttons = [{
                     buttonId: `wallpaper ${text}`,
                     buttonText: {
-                        displayText: '⌲ Next Image'
+                        displayText: ' Next Image'
                     },
                     type: 1
                 }]
@@ -3685,7 +4069,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let buttons = [{
                     buttonId: `wikimedia ${text}`,
                     buttonText: {
-                        displayText: '⌲ Next Image'
+                        displayText: ' Next Image'
                     },
                     type: 1
                 }]
@@ -3716,7 +4100,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let buttons = [{
                     buttonId: `quotesanime`,
                     buttonText: {
-                        displayText: '⌲ Next Quotes'
+                        displayText: ' Next Quotes'
                     },
                     type: 1
                 }]
@@ -3740,7 +4124,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let buttons = [{
                     buttonId: `animequotes`,
                     buttonText: {
-                        displayText: '⌲ Next Quotes'
+                        displayText: ' Next Quotes'
                     },
                     type: 1
                 }]
@@ -3776,13 +4160,12 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let buttons = [{
                     buttonId: `${command}`,
                     buttonText: {
-                        displayText: '⌲ Next Quotes'
+                        displayText: ' Next Quotes'
                     },
                     type: 1
                 }]
                 let buttonMessage = {
                     text: anu.result.message,
-                    footer: 'Quotes By Akame',
                     buttons: buttons,
                     headerType: 2
                 }
@@ -3799,13 +4182,12 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let buttons = [{
                     buttonId: `${command}`,
                     buttonText: {
-                        displayText: '⌲ Next Quotes'
+                        displayText: ' Next Quotes'
                     },
                     type: 1
                 }]
                 let buttonMessage = {
                     text: `Judul : ${anu.result.Judul}\nPenulis : ${anu.result.Penulis}\n\n${anu.result.cerita}`,
-                    footer: 'Quotes By Akame',
                     buttons: buttons,
                     headerType: 2
                 }
@@ -4207,17 +4589,17 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 			case 'confes':
 			case 'confess': {
 				if (m.isGroup) throw mess.private
-				if (!text) return m.reply(`*Cara Penggunaan*\n\nKirim perintah ${prefix}${command} nomer|pengirim|pesan\n\nContoh ${prefix}${command} 62831xxxxxxx|ini nama samaran ya|I have a crush on you\n\nContoh 2 : ${prefix}${command} 62831xxxxxxx|crush mu|I have s crush on you\n\nTenang aja privasi aman kok><`)
+				if (!text) return m.reply(`*Cara Penggunaan*\n\nKirim perintah • ${prefix}${command} nomer|pengirim|pesan\n\nContoh • ${prefix}${command} 62831xxxxxxx|ini nama samaran ya|I have a crush on you\n\nContoh 2 : • ${prefix}${command} 62831xxxxxxx|crush mu|I have s crush on you\n\nTenang aja privasi aman kok><`)
 				let nomor = q.split('|')[0] ? q.split('|')[0] : q
 				let saking = q.split('|')[1] ? q.split('|')[1] : q
 				let pesan = q.split('|')[2] ? q.split('|')[2] : ''
 				if (pesan.length < 1) return m.reply(`Harus di isi semua! ex : menfess 62831xxxxxxxx|orang|hallo kamu`)
 				let buttons = [
-                    { buttonId: `Owner`, buttonText: { displayText: '⌲ Chat Owner' }, type: 1 },
-                    { buttonId: `menfesconfirm ${m.sender}`, buttonText: { displayText: '⌲ Terima Menfess' }, type: 1 },
-                    { buttonId: `menfess`, buttonText: { displayText: '⌲ Kirim Menfess' }, type: 1 }
+                    { buttonId: `#menu`, buttonText: { displayText: 'Menu' }, type: 1 },
+                    { buttonId: `menfesconfirm ${m.sender}`, buttonText: { displayText: ' Terima Menfess' }, type: 1 },
+                    { buttonId: `menfess`, buttonText: { displayText: ' Kirim Menfess' }, type: 1 }
                 ]
-			akame.sendMessage(`${nomor}@s.whatsapp.net`, { text:`PESAN RAHASIA\n\nHai kak ada Menfess nih!!\n─────────────\n*Akame-Bot*\n─────────────\n\nDari : _${saking}_ \nPesan : _${pesan}_`, title: 'PESAN RAHASIA DECTETED', footer: 'Ciee ada yang ngirim pesan nih\n© 2022 GuaAbuzz', buttons: buttons, headerType: 5 })
+			akame.sendMessage(`${nomor}@s.whatsapp.net`, { text:`PESAN RAHASIA\n\nHai kak ada Menfess nih!!\n─────────────\n\nDari : _${saking}_ \nPesan : _${pesan}_`, title: 'PESAN RAHASIA DECTETED', footer: 'Ciee ada yang ngirim pesan nih', buttons: buttons, headerType: 5 })
 				m.reply(`Sukses Mengirim Menfess!!`)
 				}
 				break
@@ -4231,14 +4613,14 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                     let buttons = [{
                         buttonId: `tiktoknowm ${isUrl(text)[0]}`,
                         buttonText: {
-                            displayText: '⌲ No Watermark'
+                            displayText: ' No Watermark'
                         },
                         type: 1
                     },
                     {
                         buttonId: `tiktokwm ${isUrl(text)[0]}`,
                         buttonText: {
-                            displayText: '⌲ With Watermark'
+                            displayText: ' With Watermark'
                         },
                         type: 1
                     },
@@ -4362,7 +4744,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 m.reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/api/downloader/twitter', { url: text }, 'apikey'))
                 let buttons = [
-                    {buttonId: `twittermp3 ${text}`, buttonText: {displayText: '⌲ Audio'}, type: 1}
+                    {buttonId: `twittermp3 ${text}`, buttonText: {displayText: ' Audio'}, type: 1}
                 ]
                 let buttonMessage = {
                     video: { url: anu.result.HD || anu.result.SD },
@@ -4379,7 +4761,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 m.reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/api/downloader/twitter', { url: text }, 'apikey'))
                 let buttons = [
-                    {buttonId: `twitter ${text}`, buttonText: {displayText: '⌲ Video'}, type: 1}
+                    {buttonId: `twitter ${text}`, buttonText: {displayText: ' Video'}, type: 1}
                 ]
                 let buttonMessage = {
 		            image: { url: anu.result.thumb },
@@ -4420,7 +4802,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 		if (anu.type == 'video') {
 		    let buttons = [
                         {buttonId: `ytmp3 ${anu.media[0]} 128kbps`, buttonText: {displayText: '♫ Audio'}, type: 1},
-                        {buttonId: `ytmp4 ${anu.media[0]} 360p`, buttonText: {displayText: '⌲ Video'}, type: 1}
+                        {buttonId: `ytmp4 ${anu.media[0]} 360p`, buttonText: {displayText: ' Video'}, type: 1}
                     ]
 		    let buttonMessage = {
 		        image: { url: anu.author.profilePic },
@@ -4581,7 +4963,7 @@ ${id}`)
                 if (!args[0]) throw `Contoh penggunaan:\n${prefix + command} 1 2\n\nmaka hasilnya adalah tafsir surah Al-Fatihah ayat 2`
                 if (!args[1]) throw `Contoh penggunaan:\n${prefix + command} 1 2\n\nmaka hasilnya adalah tafsir surah Al-Fatihah ayat 2`
                 let res = await fetchJson(`https://islamic-api-indonesia.herokuapp.com/api/data/quran?surah=${args[0]}&ayat=${args[1]}`)
-                let txt = `「 *Tafsir Surah*  」
+                let txt = ` *Tafsir Surah*  
 
 *Pendek* : ${res.result.data.tafsir.id.short}
 
@@ -4690,13 +5072,13 @@ ${Object.entries(global.db.data.sticker).map(([key, value], index) => `${index +
                 msgs[text.toLowerCase()] = quoted.fakeObj
                 m.reply(`Berhasil Menambahkan Pesan Di List Pesan Sebagai '${text}'
     
-Akses dengan ${prefix}getmsg ${text}
+Akses dengan • ${prefix}getmsg ${text}
 
-Lihat list Pesan Dengan ${prefix}listmsg`)
+Lihat list Pesan Dengan • ${prefix}listmsg`)
             }
             break
             case 'getmsg': {
-                if (!text) throw `Contoh : ${prefix + command} File Name\n\nLihat List Pesan Dengan ${prefix}listmsg`
+                if (!text) throw `Contoh : ${prefix + command} File Name\n\nLihat List Pesan Dengan • ${prefix}listmsg`
                 let msgs = global.db.data.database
                 if (!(text.toLowerCase() in msgs)) throw `'${text}' Tidak Terdaftar Di List Pesan`
                 akame.copyNForward(m.chat, msgs[text.toLowerCase()], true)
@@ -4856,17 +5238,17 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
                 db.data.users[m.sender].limit -= 1 // -1 limit
                 let sections = [
                 {
-                title: "Nulis Buku >_<",
+                title: "Nulis Buku ",
                 rows: [
-                {title: "⌲ 「 Nulis Kanan 」", rowId: `${prefix}nuliskanan ${q}`},
-                {title: "⌲ 「 Nulis Kiri 」", rowId: `${prefix}nuliskiri ${q}`}
+                {title: "  Nulis Kanan ", rowId: `${prefix}nuliskanan ${q}`},
+                {title: "  Nulis Kiri ", rowId: `${prefix}nuliskiri ${q}`}
                 ]
                 },
                 {
-                title: "Nulis Folio >_<",
+                title: "Nulis Folio ",
                 rows: [
-                {title: "⌲ 「 Folio Kanan 」", rowId: `${prefix}foliokanan ${q}`},
-                {title: "⌲ 「 Folio Kiri 」", rowId: `${prefix}foliokiri ${q}`}
+                {title: "  Folio Kanan ", rowId: `${prefix}foliokanan ${q}`},
+                {title: "  Folio Kiri ", rowId: `${prefix}foliokiri ${q}`}
                 ]
                 }
                 ]
@@ -4935,7 +5317,7 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
                 oldd = performance.now()
                 let txtping = `*⍢⃝🤖 I N F O  B O T*\n\n`
                 txtping += `*👤 Owner Name :* ${global.namaowner}\n`
-                txtping += `*🕊️ Nama Bot :* ${global.namabot}\n`
+                txtping += `*️ Nama Bot :* ${global.namabot}\n`
                 txtping += `*🔗 Nomor Owner :* wa.me/${global.owner}\n\n`
                 txtping += `*⍢⃝👾 I N F O  S T A T I S T I K*\n\n`
                 txtping += `*🗃️ Lib :* Baileys Multi Device\n`
@@ -4945,11 +5327,10 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
                 txtping += `*⏰ Runtime :* ${runtime(process.uptime())}\n`
                 txtping += `*💻 RAM Server :* ${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}\n\n`
                 txtping += `*⍢⃝🤝 C O N N E C T  W I T H  M E*\n\n`
-                txtping += `*🎗️ Github :* ${global.github}\n`
                 txtping += `*🎗️ WhatsApp :* wa.me/${global.owner}\n`
                     .trim()
                 let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, txtping, akame.user.name, fkontak)
+            await akame.sendButtonText(m.chat, buttons, txtping, akame.user.name, fgclink)
             }
             break
             case 'speed':
@@ -4975,29 +5356,8 @@ Lihat list Pesan Dengan ${prefix}listmsg`)
                 }
             }
             break
-            //Jangan Dihapus Tar Eror Banh
             case 'owner': case 'creator': {
-                const _0x53d5a1=_0x27a5;function _0x1462(){const _0xbe3016=['12uYHjID','208fygsPF','END:VCARD','2931pmexYt','chat','item2.EMAIL;type=INTERNET:rajifarmansyah46@gmail.com\x0a','owner','item1.TEL;type=CELL;type=VOICE;waid=6289636827082:+62\x20896-3682-7082\x0a','BEGIN:VCARD\x0a','5414050UngFlr','ORG:GuaAbuzz;\x0a','106vqkniK','item3.X-ABLabel:TikTok\x0a','N:;GuaAbuzz\x20Creator;;;','item1.X-ABLabel:Creator\x20Akame\x20-\x20MD\x0a','11977850TbeEvp','4721KSYLYP','2327066mcQmla','3292794BrTbVz','GuaAbuzz','item4.X-ABLabel:Region\x0a','sendContact','5082320iACHTF'];_0x1462=function(){return _0xbe3016;};return _0x1462();}function _0x27a5(_0x35959a,_0x59c18c){const _0x146279=_0x1462();return _0x27a5=function(_0x27a522,_0x5d48a4){_0x27a522=_0x27a522-0x1d1;let _0x1a2418=_0x146279[_0x27a522];return _0x1a2418;},_0x27a5(_0x35959a,_0x59c18c);}(function(_0x4e6b4a,_0xc2511f){const _0x82151d=_0x27a5,_0x596f5d=_0x4e6b4a();while(!![]){try{const _0x4cc183=parseInt(_0x82151d(0x1d3))/0x1*(-parseInt(_0x82151d(0x1e5))/0x2)+-parseInt(_0x82151d(0x1dd))/0x3*(-parseInt(_0x82151d(0x1db))/0x4)+parseInt(_0x82151d(0x1e3))/0x5+-parseInt(_0x82151d(0x1da))/0x6*(-parseInt(_0x82151d(0x1d4))/0x7)+parseInt(_0x82151d(0x1d9))/0x8+-parseInt(_0x82151d(0x1d5))/0x9+-parseInt(_0x82151d(0x1d2))/0xa;if(_0x4cc183===_0xc2511f)break;else _0x596f5d['push'](_0x596f5d['shift']());}catch(_0x32be5a){_0x596f5d['push'](_0x596f5d['shift']());}}}(_0x1462,0x9758c));let vcard=_0x53d5a1(0x1e2)+'VERSION:3.0\x0a'+_0x53d5a1(0x1e7)+'FN:GuaAbuzz\x20Creator\x0a'+_0x53d5a1(0x1e4)+_0x53d5a1(0x1e1)+_0x53d5a1(0x1d1)+_0x53d5a1(0x1df)+'item2.X-ABLabel:Email\x0a'+'item3.URL:https://tiktok.com/@guaabuzz\x0a'+_0x53d5a1(0x1e6)+'item4.ADR:;;Jepang;;;;\x0a'+_0x53d5a1(0x1d7)+_0x53d5a1(0x1dc);akame['sendMessage'](m[_0x53d5a1(0x1de)],{'contacts':{'displayName':_0x53d5a1(0x1d6),'contacts':[{'vcard':vcard}]}},{'quoted':fkontak}),akame[_0x53d5a1(0x1d8)](m[_0x53d5a1(0x1de)],global[_0x53d5a1(0x1e0)],fkontak);
-            }
-            break
-            case 'bug':
-            case 'report': {
-                if (!text) return m.reply(`Mau Lapor Apa?\n\nContoh: ${command} Menu Error`)
-                akame.sendMessage(`6289636827082@s.whatsapp.net`, {
-                    text: `*Bug Report From:* wa.me/${m.sender.split("@")[0]}
-Report Message: ${text}`
-                })
-                m.reply(`Berhasil Dilaporkan Ke Owner\n\nPastikan Bugnya Valid, Jika Anda Bermain-main Dengan Ini, Gunakan Fitur Ini Lagi Dan Lagi Tanpa Alasan, Anda Pasti Akan Diblokir !`)
-            }
-            break
-            case 'req':
-            case 'request': {
-                if (!text) return m.reply(`Mau Request Apa?\n\nContoh: ${command} Tambahin Menu Nsfw dong`)
-                akame.sendMessage(`6289636827082@s.whatsapp.net`, {
-                    text: `*Request Feature From:* wa.me/${m.sender.split("@")[0]}
-Request Message: ${text}`
-                })
-                m.reply(`Berhasil Dilaporkan Ke Owner!`)
+                akame.sendContact(m.chat, global.owner, m)
             }
             break
             case 'gsmarena': {
@@ -5399,11 +5759,11 @@ Request Message: ${text}`
                 {
                 title: "CHANGE MENU BOT",
                 rows: [
-                {title: "⌲ Template Image", rowId: `setmenu templateImage`, description: `Change menu bot to Template Image`},
-                {title: "⌲ Template Video", rowId: `setmenu templateVideo`, description: `Change menu bot to Template Video`},
-                {title: "⌲ Template Gif", rowId: `setmenu templateGif`, description: `Change menu bot to Template Gif`},
-                {title: "⌲ Template Message", rowId: `setmenu templateMessage`, description: `Change menu bot to Template Message`},
-                {title: "⌲ Template Location", rowId: `setmenu templateLocation`, description: `Change menu bot to Template Location`}
+                {title: " Template Image", rowId: `setmenu templateImage`, description: `Change menu bot to Template Image`},
+                {title: " Template Video", rowId: `setmenu templateVideo`, description: `Change menu bot to Template Video`},
+                {title: " Template Gif", rowId: `setmenu templateGif`, description: `Change menu bot to Template Gif`},
+                {title: " Template Message", rowId: `setmenu templateMessage`, description: `Change menu bot to Template Message`},
+                {title: " Template Location", rowId: `setmenu templateLocation`, description: `Change menu bot to Template Location`}
                 ]
                 },
                 ]
@@ -5415,1715 +5775,46 @@ Request Message: ${text}`
                 goblok = fs.readFileSync('./sound/menu.mp3')
                 akame.sendMessage(m.chat, {audio: goblok, mimetype:'audio/mpeg', ptt:true }, {quoted:fvn})}
 {
-                anu = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 RULES BOT 」
-│└─────────────┈❖
-│1. Tolong Gunakan Delay 5 Detik
-│   Untuk Menggukan BOT.
-│2. Cuilk Bot Tanpa Izin? Group
-│   Ya Gua Kudeta 😎.
-│2. Gunakan Dengan Bijak.
-│3. Don't Call Bots.
-│4. Don't Spam Bot.
-└┬─────────────┈❖
-┌┤「 SNK 」
-│└─────────────┈❖
-│1. Data Whatsapp Anda Akan Kami
-│   Simpan Di Server Kami
-│   Selama BOT Aktif.
-│2. Data Anda Akan Di Hapus
-│   Ketika BOT OFF.
-│3. Kami Tidak Menyimpan Gambar/
-│   Video/File/Audio/Dokumen
-│   Yang Anda Kirim.
-│4. Kami Tidak Pernah Meminta
-│   Anda Untuk Memberikan
-│   Informasi Pribadi.
-│5. Jika Menemukan BUG/ERROR
-│   Silahkan REPORT!.
-└┬─────────────┈❖
-┌┤「 ATTENTION 」
-│└─────────────┈❖
-│1. Bot Akan Memblokir Nomor Anda.
-│2. Anda Tidak Akan Bisa.
-│   Mengakses Bot Lagi.
-│3. Mengeksploitasi Terhadap bot.
-│Sanksi: BLOCK PERMANENT
-└──────────────┈❖`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'owner', buttonText: { displayText: '➡️Chat Owner' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
-            }
-            break
-            case 'sewa':
-            case 'sewabot': {
-                anu = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 SEWA BOT 」
-│└─────────────┈❖
-│⭔ 1 Minggu 5k
-│⭔ 1 Bulan 15k
-└┬─────────────┈❖
-┌┤「 PEMBAYARAN 」
-│└─────────────┈❖
-│⭔ TELKOMSEL : ${global.telkomsel}
-│⭔ XL : ${global.xl}
-│⭔ INDOSAT : ${global.indosat}
-│⭔ TRI : ${global.tri}
-│⭔ SMARTFREN : ${global.smartfren}
-│⭔ GOPAY : ${global.gopay}
-│⭔ DANA : ${global.dana}
-│⭔ OVO : ${global.ovo}
-│⭔ SAWERIA : ${global.saweria}
-└┬─────────────┈❖
-┌┤「 KEUNTUNGAN 」
-│└─────────────┈❖
-│⭔ On 24 Jam
-│⭔ Run Dirpd/Heroku/Oktote
-│⭔ Anti Delay
-│⭔ Anti Virtex
-│⭔ Antilink WA/TT/YT
-│⭔ Welcome Image
-│⭔ Left
-└┬─────────────┈❖
-┌┤「 SISTEM 」
-│└─────────────┈❖
-│⭔ Kirim » Bukti Pembayaran » Bot Join
-└──────────────┈❖`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'owner', buttonText: { displayText: '➡️Chat Owner' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
-            }
-            break
-            case 'donasi':
-            case 'donate': {
-                anu = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 DONASI 」
-│└─────────────┈❖
-│⭔ TELKOMSEL : ${global.telkomsel}
-│⭔ XL : ${global.xl}
-│⭔ INDOSAT : ${global.indosat}
-│⭔ TRI : ${global.tri}
-│⭔ SMARTFREN : ${global.smartfren}
-│⭔ GOPAY : ${global.gopay}
-│⭔ DANA : ${global.dana}
-│⭔ OVO : ${global.ovo}
-│⭔ SAWERIA : ${global.saweria}
-│⭔ Q.S Az-Zalzalah Ayat 7 :
-│
-فَمَنْ يَّعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَّرَهٗۚ│
-│
-│⭔ Artinya : Maka barangsiapa
-│mengerjakan kebaikan seberatzarrah,
-│niscaya dia akan melihat
-│(balasan)nya.
-│
-│ *Terima Kasih*
-└──────────────┈❖`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'owner', buttonText: { displayText: '➡️Chat Owner' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
-            }
-            break
-            case 'groupmenu':
-            case 'menugroup': {
-                anu = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 INFO BOT 」
-│└─────────────┈❖
-│ Prefix : ( ${prefix} )
-│ Name : ${global.namabot}\n│ Owner : ${global.namaowner}
-│ Mode : ${akame.public ? 'Public' : 'Self'}
-│ User : ${Object.keys(global.db.data.users).length}
-│ Premium : ${isPremium ? '✅' : `❌`}
-│ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
-│ Runtime : ${runtime(process.uptime())}
-│ Lib : Baileys-md
-│ Menuju HBD GuaAbuzz :
-│  ${menuju}
-└┬─────────────┈❖
-┌┤「 GROUP 」
-│└─────────────┈❖
-│⭔ ${prefix}linkgroup
-│⭔ ${prefix}revoke
-│⭔ ${prefix}tagmenu [option]
-│⭔ ${prefix}ephemeral [option]
-│⭔ ${prefix}setppgrup full [image]
-│⭔ ${prefix}setname [text]
-│⭔ ${prefix}setdesc [text]
-│⭔ ${prefix}group [option]
-│⭔ ${prefix}editinfo [option]
-│⭔ ${prefix}add @user
-│⭔ ${prefix}kick @user
-│⭔ ${prefix}hidetag [text]
-│⭔ ${prefix}tagall [text]
-│⭔ ${prefix}totag [reply]
-│⭔ ${prefix}promote @user
-│⭔ ${prefix}demote @user
-│⭔ ${prefix}mute [on/off]
-│⭔ ${prefix}antilink [on/off]
-│⭔ ${prefix}antilinkyt [on/off]
-│⭔ ${prefix}antilinktt [on/off]
-│⭔ ${prefix}vote [text]
-│⭔ ${prefix}devote
-│⭔ ${prefix}upvote
-│⭔ ${prefix}cekvote
-│⭔ ${prefix}hapusvote
-└──────────────┈❖`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
-            }
-            break
-            case 'downloadmenu':
-            case 'menudownload': {
-                anu = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 INFO BOT 」
-│└─────────────┈❖
-│ Prefix : ( ${prefix} )
-│ Name : ${global.namabot}\n│ Owner : ${global.namaowner}
-│ Mode : ${akame.public ? 'Public' : 'Self'}
-│ User : ${Object.keys(global.db.data.users).length}
-│ Premium : ${isPremium ? '✅' : `❌`}
-│ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
-│ Runtime : ${runtime(process.uptime())}
-│ Lib : Baileys-md
-│ Menuju HBD GuaAbuzz :
-│  ${menuju}
-└┬─────────────┈❖
-┌┤「 DOWNLOADER 」
-│└─────────────┈❖
-│⭔ ${prefix}tiktoknowm [url]
-│⭔ ${prefix}tiktokwm [url]
-│⭔ ${prefix}tiktokmp3 [url]
-│⭔ ${prefix}instagram [url]
-│⭔ ${prefix}instastory [url]
-│⭔ ${prefix}twitter [url]
-│⭔ ${prefix}twittermp3 [url]
-│⭔ ${prefix}facebook [url]
-│⭔ ${prefix}zippyshare [url]
-│⭔ ${prefix}mediafire [url]
-│⭔ ${prefix}ytmp3 [url]
-│⭔ ${prefix}ytmp4 [url]
-│⭔ ${prefix}getmusic [query]
-│⭔ ${prefix}getvideo [query]
-│⭔ ${prefix}umma [url]
-│⭔ ${prefix}joox [query]
-│⭔ ${prefix}soundcloud [url]
-└──────────────┈❖`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
-            }
-            break
-            case 'searchmenu':
-            case 'menusearch': {
-                anu = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 INFO BOT 」
-│└─────────────┈❖
-│ Prefix : ( ${prefix} )
-│ Name : ${global.namabot}\n│ Owner : ${global.namaowner}
-│ Mode : ${akame.public ? 'Public' : 'Self'}
-│ User : ${Object.keys(global.db.data.users).length}
-│ Premium : ${isPremium ? '✅' : `❌`}
-│ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
-│ Runtime : ${runtime(process.uptime())}
-│ Lib : Baileys-md
-│ Menuju HBD GuaAbuzz :
-│  ${menuju}
-└┬─────────────┈❖
-┌┤「 SEARCH 」
-│└─────────────┈❖
-│⭔ ${prefix}play [query]
-│⭔ ${prefix}yts [query]
-│⭔ ${prefix}google [query]
-│⭔ ${prefix}gimage [query]
-│⭔ ${prefix}pinterest [query]
-│⭔ ${prefix}wallpaper [query]
-│⭔ ${prefix}wikimedia [query]
-│⭔ ${prefix}ytsearch [query]
-│⭔ ${prefix}ringtone [query]
-└──────────────┈❖`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
-            }
-            break
-            case 'stickermenu':
-            case 'menusticker': {
-                anu = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 INFO BOT 」
-│└─────────────┈❖
-│ Prefix : ( ${prefix} )
-│ Name : ${global.namabot}\n│ Owner : ${global.namaowner}
-│ Mode : ${akame.public ? 'Public' : 'Self'}
-│ User : ${Object.keys(global.db.data.users).length}
-│ Premium : ${isPremium ? '✅' : `❌`}
-│ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
-│ Runtime : ${runtime(process.uptime())}
-│ Lib : Baileys-md
-│ Menuju HBD GuaAbuzz :
-│  ${menuju}
-└┬─────────────┈❖
-┌┤「 STICKER 」
-│└─────────────┈❖
-│⭔ ${prefix}sticker
-│⭔ ${prefix}stickerwm
-│⭔ ${prefix}attp [teks]
-│⭔ ${prefix}ttp [teks]
-│⭔ ${prefix}mukalu
-│⭔ ${prefix}paimon
-│⭔ ${prefix}amongus
-│⭔ ${prefix}dadu
-│⭔ ${prefix}gura
-│⭔ ${prefix}doge
-│⭔ ${prefix}bucinstick
-│⭔ ${prefix}patrick
-│⭔ ${prefix}emojimix 😎+🤠
-│⭔ ${prefix}emojimix2 😎
-└──────────────┈❖`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
-            }
-            break
-            case 'animemenu':
-            case 'menuanime': {
-                anu = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 INFO BOT 」
-│└─────────────┈❖
-│ Prefix : ( ${prefix} )
-│ Name : ${global.namabot}\n│ Owner : ${global.namaowner}
-│ Mode : ${akame.public ? 'Public' : 'Self'}
-│ User : ${Object.keys(global.db.data.users).length}
-│ Premium : ${isPremium ? '✅' : `❌`}
-│ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
-│ Runtime : ${runtime(process.uptime())}
-│ Lib : Baileys-md
-│ Menuju HBD GuaAbuzz :
-│  ${menuju}
-└┬─────────────┈❖
-┌┤「 ANIME 」
-│└─────────────┈❖
-│⭔ ${prefix}hololive
-│⭔ ${prefix}couples
-│⭔ ${prefix}couple
-│⭔ ${prefix}waifu
-│⭔ ${prefix}husbu
-│⭔ ${prefix}neko
-│⭔ ${prefix}uniform
-│⭔ ${prefix}cosplay
-│⭔ ${prefix}maid
-│⭔ ${prefix}oppai
-│⭔ ${prefix}selfies
-│⭔ ${prefix}shinobu
-│⭔ ${prefix}akira
-│⭔ ${prefix}akiyama
-│⭔ ${prefix}ana
-│⭔ ${prefix}asuna
-│⭔ ${prefix}ayuzawa
-│⭔ ${prefix}boruto
-│⭔ ${prefix}chitoge
-│⭔ ${prefix}deidara
-│⭔ ${prefix}doraemon
-│⭔ ${prefix}elaina
-│⭔ ${prefix}emilia
-│⭔ ${prefix}erza
-│⭔ ${prefix}gremory
-│⭔ ${prefix}hestia
-│⭔ ${prefix}hinata
-│⭔ ${prefix}inori
-│⭔ ${prefix}isuzu
-│⭔ ${prefix}itachi
-│⭔ ${prefix}itori
-│⭔ ${prefix}kaga
-│⭔ ${prefix}kagura
-│⭔ ${prefix}kakasih
-│⭔ ${prefix}kaori
-│⭔ ${prefix}keneki
-│⭔ ${prefix}kotori
-│⭔ ${prefix}kurumi
-│⭔ ${prefix}loli
-│⭔ ${prefix}madara
-│⭔ ${prefix}mikasa
-│⭔ ${prefix}miku
-│⭔ ${prefix}minato
-│⭔ ${prefix}naruto
-│⭔ ${prefix}nezuko
-│⭔ ${prefix}onepiece
-│⭔ ${prefix}pokemon
-│⭔ ${prefix}rize
-│⭔ ${prefix}sagiri
-│⭔ ${prefix}sakura
-│⭔ ${prefix}shinka
-│⭔ ${prefix}shizuka
-│⭔ ${prefix}shouta
-│⭔ ${prefix}toukachan
-│⭔ ${prefix}tsunade
-│⭔ ${prefix}yuki
-│⭔ ${prefix}raiden
-│⭔ ${prefix}calliope
-│⭔ ${prefix}kitagawa
-└──────────────┈❖`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
-            }
-            break
-            case 'asupanmenu':
-            case 'menuasupan': {
-                anu = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 INFO BOT 」
-│└─────────────┈❖
-│ Prefix : ( ${prefix} )
-│ Name : ${global.namabot}\n│ Owner : ${global.namaowner}
-│ Mode : ${akame.public ? 'Public' : 'Self'}
-│ User : ${Object.keys(global.db.data.users).length}
-│ Premium : ${isPremium ? '✅' : `❌`}
-│ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
-│ Runtime : ${runtime(process.uptime())}
-│ Lib : Baileys-md
-│ Menuju HBD GuaAbuzz :
-│  ${menuju}
-└┬─────────────┈❖
-┌┤「 ASUPAN 」
-│└─────────────┈❖
-│⭔ ${prefix}cecan
-│⭔ ${prefix}cogan
-│⭔ ${prefix}china
-│⭔ ${prefix}japan
-│⭔ ${prefix}korea
-│⭔ ${prefix}indonesia
-│⭔ ${prefix}malaysia
-│⭔ ${prefix}thailand
-│⭔ ${prefix}vietnam
-│⭔ ${prefix}blankpink
-│⭔ ${prefix}justina
-│⭔ ${prefix}kpop
-│⭔ ${prefix}rose
-│⭔ ${prefix}ryujin
-└──────────────┈❖`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
-            }
-            break
-            case 'quotesmenu':
-            case 'menuquotes': {
-                anu = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 INFO BOT 」
-│└─────────────┈❖
-│ Prefix : ( ${prefix} )
-│ Name : ${global.namabot}\n│ Owner : ${global.namaowner}
-│ Mode : ${akame.public ? 'Public' : 'Self'}
-│ User : ${Object.keys(global.db.data.users).length}
-│ Premium : ${isPremium ? '✅' : `❌`}
-│ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
-│ Runtime : ${runtime(process.uptime())}
-│ Lib : Baileys-md
-│ Menuju HBD GuaAbuzz :
-│  ${menuju}
-└┬─────────────┈❖
-┌┤「 QUOTES 」
-│└─────────────┈❖
-│⭔ ${prefix}quotesanime
-│⭔ ${prefix}animequotes
-│⭔ ${prefix}motivasi
-│⭔ ${prefix}dilanquote
-│⭔ ${prefix}bucinquote
-│⭔ ${prefix}katasenja
-│⭔ ${prefix}randomquote
-│⭔ ${prefix}muslimquote
-│⭔ ${prefix}galauquote
-│⭔ ${prefix}kanyequote
-│⭔ ${prefix}trumpquote
-│⭔ ${prefix}trumpthink
-│⭔ ${prefix}creepyfact
-│⭔ ${prefix}faktaunik
-│⭔ ${prefix}puisi
-│⭔ ${prefix}pantun
-│⭔ ${prefix}cerpen
-└──────────────┈❖`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
-            }
-            break
-            case 'mememenu':
-            case 'menumeme': {
-                anu = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 INFO BOT 」
-│└─────────────┈❖
-│ Prefix : ( ${prefix} )
-│ Name : ${global.namabot}\n│ Owner : ${global.namaowner}
-│ Mode : ${akame.public ? 'Public' : 'Self'}
-│ User : ${Object.keys(global.db.data.users).length}
-│ Premium : ${isPremium ? '✅' : `❌`}
-│ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
-│ Runtime : ${runtime(process.uptime())}
-│ Lib : Baileys-md
-│ Menuju HBD GuaAbuzz :
-│  ${menuju}
-└┬─────────────┈❖
-┌┤「 MEME 」
-│└─────────────┈❖
-│⭔ ${prefix}animememe
-│⭔ ${prefix}anjing
-│⭔ ${prefix}meme
-│⭔ ${prefix}memeindo
-│⭔ ${prefix}darkjoke
-│⭔ ${prefix}darkjokes
-│⭔ ${prefix}onecak
-└──────────────┈❖`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
-            }
-            break
-            case 'randommenu':
-            case 'menurandom': {
-                anu = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 INFO BOT 」
-│└─────────────┈❖
-│ Prefix : ( ${prefix} )
-│ Name : ${global.namabot}\n│ Owner : ${global.namaowner}
-│ Mode : ${akame.public ? 'Public' : 'Self'}
-│ User : ${Object.keys(global.db.data.users).length}
-│ Premium : ${isPremium ? '✅' : `❌`}
-│ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
-│ Runtime : ${runtime(process.uptime())}
-│ Lib : Baileys-md
-│ Menuju HBD GuaAbuzz :
-│  ${menuju}
-└┬─────────────┈❖
-┌┤「 RANDOM 」
-│└─────────────┈❖
-│⭔ ${prefix}simih [teks]
-│⭔ ${prefix}apikey
-│⭔ ${prefix}coffe
-│⭔ ${prefix}ebinary [teks]
-│⭔ ${prefix}dbinary [teks]
-│⭔ ${prefix}styletext [teks]
-└──────────────┈❖`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
-            }
-            break
-            case 'textpromenu':
-            case 'menutextpro': {
-                anu = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 INFO BOT 」
-│└─────────────┈❖
-│ Prefix : ( ${prefix} )
-│ Name : ${global.namabot}\n│ Owner : ${global.namaowner}
-│ Mode : ${akame.public ? 'Public' : 'Self'}
-│ User : ${Object.keys(global.db.data.users).length}
-│ Premium : ${isPremium ? '✅' : `❌`}
-│ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
-│ Runtime : ${runtime(process.uptime())}
-│ Lib : Baileys-md
-│ Menuju HBD GuaAbuzz :
-│  ${menuju}
-└┬─────────────┈❖
-┌┤「 TEXT PRO 」
-│└─────────────┈❖
-│⭔ ${prefix}3dchristmas
-│⭔ ${prefix}3ddeepsea
-│⭔ ${prefix}americanflag
-│⭔ ${prefix}3dscifi
-│⭔ ${prefix}3drainbow
-│⭔ ${prefix}3dwaterpipe
-│⭔ ${prefix}halloweenskeleton
-│⭔ ${prefix}sketch
-│⭔ ${prefix}bluecircuit
-│⭔ ${prefix}space
-│⭔ ${prefix}metallic
-│⭔ ${prefix}fiction
-│⭔ ${prefix}greenhorror
-│⭔ ${prefix}transformer
-│⭔ ${prefix}berry
-│⭔ ${prefix}thunder
-│⭔ ${prefix}magma
-│⭔ ${prefix}3dcrackedstone
-│⭔ ${prefix}3dneonlight
-│⭔ ${prefix}impressiveglitch
-│⭔ ${prefix}naturalleaves
-│⭔ ${prefix}fireworksparkle
-│⭔ ${prefix}matrix
-│⭔ ${prefix}dropwater
-│⭔ ${prefix}harrypotter
-│⭔ ${prefix}foggywindow
-│⭔ ${prefix}neondevils
-│⭔ ${prefix}christmasholiday
-│⭔ ${prefix}3dgradient
-│⭔ ${prefix}blackpink
-│⭔ ${prefix}gluetext
-└──────────────┈❖`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
-            }
-            break
-            case 'photoeditormenu':
-            case 'menuphotoeditor': {
-                anu = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 INFO BOT 」
-│└─────────────┈❖
-│ Prefix : ( ${prefix} )
-│ Name : ${global.namabot}\n│ Owner : ${global.namaowner}
-│ Mode : ${akame.public ? 'Public' : 'Self'}
-│ User : ${Object.keys(global.db.data.users).length}
-│ Premium : ${isPremium ? '✅' : `❌`}
-│ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
-│ Runtime : ${runtime(process.uptime())}
-│ Lib : Baileys-md
-│ Menuju HBD GuaAbuzz :
-│  ${menuju}
-└┬─────────────┈❖
-┌┤「 PHOTO EDITOR 」
-│└─────────────┈❖
-│⭔ ${prefix}gay
-│⭔ ${prefix}contrast
-│⭔ ${prefix}pixelate
-│⭔ ${prefix}dither
-│⭔ ${prefix}sepia
-│⭔ ${prefix}brighten
-│⭔ ${prefix}greyscale
-│⭔ ${prefix}circle
-│⭔ ${prefix}blur
-│⭔ ${prefix}invert
-│⭔ ${prefix}scale
-│⭔ ${prefix}upscale
-│⭔ ${prefix}glass
-│⭔ ${prefix}wasted
-│⭔ ${prefix}passed
-│⭔ ${prefix}comrade
-│⭔ ${prefix}jail
-│⭔ ${prefix}triggered
-└──────────────┈❖`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
-            }
-            break
-            case 'ephotomenu':
-            case 'menuephoto': {
-                anu = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 INFO BOT 」
-│└─────────────┈❖
-│ Prefix : ( ${prefix} )
-│ Name : ${global.namabot}\n│ Owner : ${global.namaowner}
-│ Mode : ${akame.public ? 'Public' : 'Self'}
-│ User : ${Object.keys(global.db.data.users).length}
-│ Premium : ${isPremium ? '✅' : `❌`}
-│ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
-│ Runtime : ${runtime(process.uptime())}
-│ Lib : Baileys-md
-│ Menuju HBD GuaAbuzz :
-│  ${menuju}
-└┬─────────────┈❖
-┌┤「 EPHOTO 」
-│└─────────────┈❖
-│⭔ ${prefix}logo2
-│⭔ ${prefix}logo3
-│⭔ ${prefix}logo4
-│⭔ ${prefix}logogaming
-│⭔ ${prefix}logogirl
-│⭔ ${prefix}logogold
-│⭔ ${prefix}spiderlogo
-│⭔ ${prefix}ffcover
-│⭔ ${prefix}crossfire
-│⭔ ${prefix}galaxy
-│⭔ ${prefix}glass
-│⭔ ${prefix}neon
-│⭔ ${prefix}beach
-│⭔ ${prefix}awan
-│⭔ ${prefix}flower
-│⭔ ${prefix}bohlam
-│⭔ ${prefix}kaligrafi
-│⭔ ${prefix}coklat
-│⭔ ${prefix}quotes
-│⭔ ${prefix}grafity
-│⭔ ${prefix}marmer
-│⭔ ${prefix}musimsemi
-│⭔ ${prefix}ruby
-│⭔ ${prefix}shadowtext
-│⭔ ${prefix}starlogo
-│⭔ ${prefix}starnight
-│⭔ ${prefix}starnight2
-│⭔ ${prefix}blackpink
-│⭔ ${prefix}cake
-│⭔ ${prefix}flashlight
-│⭔ ${prefix}puppycute
-│⭔ ${prefix}yasuologo
-│⭔ ${prefix}certificate
-│⭔ ${prefix}igcertificate
-│⭔ ${prefix}ytcertificate
-└──────────────┈❖`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
-            }
-            break
-            case 'gamemenu':
-            case 'menugame': {
-                anu = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 INFO BOT 」
-│└─────────────┈❖
-│ Prefix : ( ${prefix} )
-│ Name : ${global.namabot}\n│ Owner : ${global.namaowner}
-│ Mode : ${akame.public ? 'Public' : 'Self'}
-│ User : ${Object.keys(global.db.data.users).length}
-│ Premium : ${isPremium ? '✅' : `❌`}
-│ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
-│ Runtime : ${runtime(process.uptime())}
-│ Lib : Baileys-md
-│ Menuju HBD GuaAbuzz :
-│  ${menuju}
-└┬─────────────┈❖
-┌┤「 GAME 」
-│└─────────────┈❖
-│⭔ ${prefix}delttt
-│⭔ ${prefix}tictactoe
-│⭔ ${prefix}family100
-│⭔ ${prefix}tebakmenu [option]
-│⭔ ${prefix}math [mode]
-│⭔ ${prefix}suitpvp [@tag]
-└──────────────┈❖`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
-            }
-            break
-            case 'primbonmenu':
-            case 'menuprimbon': {
-                anu = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 INFO BOT 」
-│└─────────────┈❖
-│ Prefix : ( ${prefix} )
-│ Name : ${global.namabot}\n│ Owner : ${global.namaowner}
-│ Mode : ${akame.public ? 'Public' : 'Self'}
-│ User : ${Object.keys(global.db.data.users).length}
-│ Premium : ${isPremium ? '✅' : `❌`}
-│ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
-│ Runtime : ${runtime(process.uptime())}
-│ Lib : Baileys-md
-│ Menuju HBD GuaAbuzz :
-│  ${menuju}
-└┬─────────────┈❖
-┌┤「 PRIMBON 」
-│└─────────────┈❖
-│⭔ ${prefix}nomorhoki
-│⭔ ${prefix}artimimpi
-│⭔ ${prefix}artinama
-│⭔ ${prefix}ramaljodoh
-│⭔ ${prefix}ramaljodohbali
-│⭔ ${prefix}suamiistri
-│⭔ ${prefix}ramalcinta
-│⭔ ${prefix}cocoknama
-│⭔ ${prefix}pasangan
-│⭔ ${prefix}jadiannikah
-│⭔ ${prefix}sifatusaha
-│⭔ ${prefix}rezeki
-│⭔ ${prefix}pekerjaan
-│⭔ ${prefix}nasib
-│⭔ ${prefix}penyakit
-│⭔ ${prefix}tarot
-│⭔ ${prefix}fengshui
-│⭔ ${prefix}haribaik
-│⭔ ${prefix}harisangar
-│⭔ ${prefix}harisial
-│⭔ ${prefix}nagahari
-│⭔ ${prefix}arahrezeki
-│⭔ ${prefix}peruntungan
-│⭔ ${prefix}weton
-│⭔ ${prefix}karakter
-│⭔ ${prefix}keberuntungan
-│⭔ ${prefix}memancing
-│⭔ ${prefix}masasubur
-│⭔ ${prefix}zodiak
-│⭔ ${prefix}shio
-└──────────────┈❖`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
-            }
-            break
-            case 'convertmenu':
-            case 'menuconvert': {
-                anu = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 INFO BOT 」
-│└─────────────┈❖
-│ Prefix : ( ${prefix} )
-│ Name : ${global.namabot}\n│ Owner : ${global.namaowner}
-│ Mode : ${akame.public ? 'Public' : 'Self'}
-│ User : ${Object.keys(global.db.data.users).length}
-│ Premium : ${isPremium ? '✅' : `❌`}
-│ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
-│ Runtime : ${runtime(process.uptime())}
-│ Lib : Baileys-md
-│ Menuju HBD GuaAbuzz :
-│  ${menuju}
-└┬─────────────┈❖
-┌┤「 CONVERT 」
-│└─────────────┈❖
-│⭔ ${prefix}nulis
-│⭔ ${prefix}removebg [image]
-│⭔ ${prefix}toimage [reply sticker]
-│⭔ ${prefix}tovideo [reply sticker]
-│⭔ ${prefix}togif [reply sticker]
-│⭔ ${prefix}tourl [image / video]
-│⭔ ${prefix}tovn [reply video]
-│⭔ ${prefix}tomp3 [reply video]
-│⭔ ${prefix}toaudio [reply video]
-│
-└───────⭓`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
-            }
-            break
-            case 'mainmenu':
-            case 'menumain': {
-                anu = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 INFO BOT 」
-│└─────────────┈❖
-│ Prefix : ( ${prefix} )
-│ Name : ${global.namabot}\n│ Owner : ${global.namaowner}
-│ Mode : ${akame.public ? 'Public' : 'Self'}
-│ User : ${Object.keys(global.db.data.users).length}
-│ Premium : ${isPremium ? '✅' : `❌`}
-│ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
-│ Runtime : ${runtime(process.uptime())}
-│ Lib : Baileys-md
-│ Menuju HBD GuaAbuzz :
-│  ${menuju}
-└┬─────────────┈❖
-┌┤「 MAIN 」
-│└─────────────┈❖
-│⭔ ${prefix}ping
-│⭔ ${prefix}owner
-│⭔ ${prefix}donasi
-│⭔ ${prefix}menu / ${prefix}help / ${prefix}?
-│⭔ ${prefix}delete / ${prefix}del / ${prefix}d
-│⭔ ${prefix}infochat
-│⭔ ${prefix}quoted
-│⭔ ${prefix}listpc
-│⭔ ${prefix}listgc
-│⭔ ${prefix}listonline
-│⭔ ${prefix}speedtest
-│⭔ ${prefix}request [req]
-│⭔ ${prefix}report [bug]
-└──────────────┈❖`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
-            }
-            break
-            case 'databasemenu':
-            case 'menudatabase': {
-                anu = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 INFO BOT 」
-│└─────────────┈❖
-│ Prefix : ( ${prefix} )
-│ Name : ${global.namabot}\n│ Owner : ${global.namaowner}
-│ Mode : ${akame.public ? 'Public' : 'Self'}
-│ User : ${Object.keys(global.db.data.users).length}
-│ Premium : ${isPremium ? '✅' : `❌`}
-│ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
-│ Runtime : ${runtime(process.uptime())}
-│ Lib : Baileys-md
-│ Menuju HBD GuaAbuzz :
-│  ${menuju}
-└┬─────────────┈❖
-┌┤「 DATABASE 」
-│└─────────────┈❖
-│⭔ ${prefix}setcmd [reply sticker/pesan]
-│⭔ ${prefix}listcmd
-│⭔ ${prefix}delcmd [reply sticker/pesan]
-│⭔ ${prefix}lockcmd
-│⭔ ${prefix}addmsg
-│⭔ ${prefix}listmsg
-│⭔ ${prefix}getmsg
-│⭔ ${prefix}delmsg
-└──────────────┈❖`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
-            }
-            break
-            case 'anonymousmenu':
-            case 'menuanonymous': {
-                anu = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 INFO BOT 」
-│└─────────────┈❖
-│ Prefix : ( ${prefix} )
-│ Name : ${global.namabot}\n│ Owner : ${global.namaowner}
-│ Mode : ${akame.public ? 'Public' : 'Self'}
-│ User : ${Object.keys(global.db.data.users).length}
-│ Premium : ${isPremium ? '✅' : `❌`}
-│ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
-│ Runtime : ${runtime(process.uptime())}
-│ Lib : Baileys-md
-│ Menuju HBD GuaAbuzz :
-│  ${menuju}
-└┬─────────────┈❖
-┌┤「 ANONYMOUS CHAT 」
-│└─────────────┈❖
-│⭔ ${prefix}menfess
-│⭔ ${prefix}anonymous
-│⭔ ${prefix}start
-│⭔ ${prefix}next
-│⭔ ${prefix}keluar
-└──────────────┈❖`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
-            }
-            break
-            case 'islamicmenu':
-            case 'menuislamic': {
-                anu = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 INFO BOT 」
-│└─────────────┈❖
-│ Prefix : ( ${prefix} )
-│ Name : ${global.namabot}\n│ Owner : ${global.namaowner}
-│ Mode : ${akame.public ? 'Public' : 'Self'}
-│ User : ${Object.keys(global.db.data.users).length}
-│ Premium : ${isPremium ? '✅' : `❌`}
-│ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
-│ Runtime : ${runtime(process.uptime())}
-│ Lib : Baileys-md
-│ Menuju HBD GuaAbuzz :
-│  ${menuju}
-└┬─────────────┈❖
-┌┤「 ISLAMIC 」
-│└─────────────┈❖
-│⭔ ${prefix}iqra
-│⭔ ${prefix}hadist
-│⭔ ${prefix}alquran
-│⭔ ${prefix}juzamma
-│⭔ ${prefix}kisahnabi
-│⭔ ${prefix}tafsirsurah
-│⭔ ${prefix}jadwalsholat
-│⭔ ${prefix}niatsholat
-│⭔ ${prefix}kisahmuslim
-│⭔ ${prefix}asmaulhusna
-└──────────────┈❖`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
-            }
-            break
-            case 'kerangmenu':
-            case 'menukerang': {
-                anu = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 INFO BOT 」
-│└─────────────┈❖
-│ Prefix : ( ${prefix} )
-│ Name : ${global.namabot}\n│ Owner : ${global.namaowner}
-│ Mode : ${akame.public ? 'Public' : 'Self'}
-│ User : ${Object.keys(global.db.data.users).length}
-│ Premium : ${isPremium ? '✅' : `❌`}
-│ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
-│ Runtime : ${runtime(process.uptime())}
-│ Lib : Baileys-md
-│ Menuju HBD GuaAbuzz :
-│  ${menuju}
-└┬─────────────┈❖
-┌┤「 KERANG 」
-│└─────────────┈❖
-│⭔ ${prefix}apakah [teks]
-│⭔ ${prefix}bisakah [teks]
-│⭔ ${prefix}bagaimanakah [teks]
-│⭔ ${prefix}rate [teks]
-│⭔ ${prefix}kapankah [teks]
-│⭔ ${prefix}cekganteng [teks]
-│⭔ ${prefix}cekcantik [teks]
-│⭔ ${prefix}ceksange [teks]
-│⭔ ${prefix}cekgay [teks]
-│⭔ ${prefix}ceklesbi [teks]
-│⭔ ${prefix}cekmati [teks]
-│⭔ ${prefix}wangy [teks]
-│⭔ ${prefix}halah [teks]
-│⭔ ${prefix}hilih [teks]
-│⭔ ${prefix}huluh [teks]
-│⭔ ${prefix}heleh [teks]
-│⭔ ${prefix}holoh [teks]
-│⭔ ${prefix}jadian [teks]
-│⭔ ${prefix}jodohku [teks]
-└──────────────┈❖`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
-            }
-            break
-            case 'voicemenu':
-            case 'menuvoice': {
-                anu = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 INFO BOT 」
-│└─────────────┈❖
-│ Prefix : ( ${prefix} )
-│ Name : ${global.namabot}\n│ Owner : ${global.namaowner}
-│ Mode : ${akame.public ? 'Public' : 'Self'}
-│ User : ${Object.keys(global.db.data.users).length}
-│ Premium : ${isPremium ? '✅' : `❌`}
-│ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
-│ Runtime : ${runtime(process.uptime())}
-│ Lib : Baileys-md
-│ Menuju HBD GuaAbuzz :
-│  ${menuju}
-└┬─────────────┈❖
-┌┤「 VOICE CHANGER 」
-│└─────────────┈❖
-│⭔ ${prefix}bass
-│⭔ ${prefix}blown
-│⭔ ${prefix}deep
-│⭔ ${prefix}earrape
-│⭔ ${prefix}fast
-│⭔ ${prefix}fat
-│⭔ ${prefix}nightcore
-│⭔ ${prefix}reverse
-│⭔ ${prefix}robot
-│⭔ ${prefix}slow
-│⭔ ${prefix}tupai
-└──────────────┈❖`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
-            }
-            break
-            case 'stalkmenu':
-            case 'menustalk': {
-                anu = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 INFO BOT 」
-│└─────────────┈❖
-│ Prefix : ( ${prefix} )
-│ Name : ${global.namabot}\n│ Owner : ${global.namaowner}
-│ Mode : ${akame.public ? 'Public' : 'Self'}
-│ User : ${Object.keys(global.db.data.users).length}
-│ Premium : ${isPremium ? '✅' : `❌`}
-│ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
-│ Runtime : ${runtime(process.uptime())}
-│ Lib : Baileys-md
-│ Menuju HBD GuaAbuzz :
-│  ${menuju}
-└┬─────────────┈❖
-┌┤「 STALK 」
-│└─────────────┈❖
-│⭔ ${prefix}cekapi
-│⭔ ${prefix}githubstalk [username]
-│⭔ ${prefix}stalk [option] [query]
-└──────────────┈❖`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
-            }
-            break
-            case 'ownermenu':
-            case 'menuowner': {
-                anu = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 INFO BOT 」
-│└─────────────┈❖
-│ Prefix : ( ${prefix} )
-│ Name : ${global.namabot}\n│ Owner : ${global.namaowner}
-│ Mode : ${akame.public ? 'Public' : 'Self'}
-│ User : ${Object.keys(global.db.data.users).length}
-│ Premium : ${isPremium ? '✅' : `❌`}
-│ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
-│ Runtime : ${runtime(process.uptime())}
-│ Lib : Baileys-md
-│ Menuju HBD GuaAbuzz :
-│  ${menuju}
-└┬─────────────┈❖
-┌┤「 OWNER 」
-│└─────────────┈❖
-│⭔ ${prefix}setnamabot
-│⭔ ${prefix}setbiobot
-│⭔ ${prefix}react [emoji]
-│⭔ ${prefix}autosw
-│⭔ ${prefix}shutdown
-│⭔ ${prefix}myip
-│⭔ ${prefix}setexif
-│⭔ ${prefix}chat [option]
-│⭔ ${prefix}join [link]
-│⭔ ${prefix}leave
-│⭔ ${prefix}block @user
-│⭔ ${prefix}unblock @user
-│⭔ ${prefix}bcgroup [text]
-│⭔ ${prefix}bcall [text]
-│⭔ ${prefix}setppbot full [image]
-│⭔ ${prefix}setmenu [option]
-│⭔ ${prefix}setstatus
-│⭔ ${prefix}setnamebot
-└──────────────┈❖`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
-            }
-            break
-            case 'webzonemenu':
-            case 'menuwebzone': {
-                anu = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 INFO BOT 」
-│└─────────────┈❖
-│ Prefix : ( ${prefix} )
-│ Name : ${global.namabot}\n│ Owner : ${global.namaowner}
-│ Mode : ${akame.public ? 'Public' : 'Self'}
-│ User : ${Object.keys(global.db.data.users).length}
-│ Premium : ${isPremium ? '✅' : `❌`}
-│ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
-│ Runtime : ${runtime(process.uptime())}
-│ Lib : Baileys-md
-│ Menuju HBD GuaAbuzz :
-│  ${menuju}
-└┬─────────────┈❖
-┌┤「 WEBZONE 」
-│└─────────────┈❖
-│⭔ ${prefix}jadwaltv
-│⭔ ${prefix}playstore
-│⭔ ${prefix}gsmarena
-│⭔ ${prefix}jadwalbioskop
-│⭔ ${prefix}nowplayingbioskop
-│⭔ ${prefix}aminio
-│⭔ ${prefix}wattpad
-│⭔ ${prefix}webtoons
-│⭔ ${prefix}drakor
-└──────────────┈❖`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
-            }
-            break
-            case 'wallpapermenu':
-            case 'menuwalpaper': {
-                anu = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 INFO BOT 」
-│└─────────────┈❖
-│ Prefix : ( ${prefix} )
-│ Name : ${global.namabot}\n│ Owner : ${global.namaowner}
-│ Mode : ${akame.public ? 'Public' : 'Self'}
-│ User : ${Object.keys(global.db.data.users).length}
-│ Premium : ${isPremium ? '✅' : `❌`}
-│ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
-│ Runtime : ${runtime(process.uptime())}
-│ Lib : Baileys-md
-│ Menuju HBD GuaAbuzz :
-│  ${menuju}
-└┬─────────────┈❖
-┌┤「 WALLPAPER 」
-│└─────────────┈❖
-│⭔ ${prefix}cyberspace
-│⭔ ${prefix}mountain
-│⭔ ${prefix}programming
-│⭔ ${prefix}technology
-│⭔ ${prefix}aesthetic
-│⭔ ${prefix}boneka
-│⭔ ${prefix}hekel
-│⭔ ${prefix}kucing
-│⭔ ${prefix}mobil
-│⭔ ${prefix}motor
-│⭔ ${prefix}pubg
-│⭔ ${prefix}wallhp
-└──────────────┈❖`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
-            }
-            break
-            case 'list':
-            case 'menu':
-            case 'help':
-            case '?': {
-                goblok = fs.readFileSync('./sound/menu.mp3')
-                akame.sendMessage(m.chat, {audio: goblok, mimetype:'audio/mpeg', ptt:true }, {quoted:fvn})}
-{
-                anu = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 NOTE 」
-│└─────────────┈❖
-│• Saya ${global.namabot}, Bot Ini Adalah
-│  Beta Multi-Device WhatsApp.
-│• Jika Kamu Menemukan Semacam
-│  Bug Atau Kesalahan Mohon
-│  Dimaklumi Dulu Ya,Ketik Report
-│  Untuk Lapor Owner Agar Segera
-│  Diperbaiki Atau DiFix.
-└┬─────────────┈❖
-┌┤「 INFO BOT 」
-│└─────────────┈❖
-│• Library : *Baileys-MD*.
-│• Prefix : ( ${prefix} )
-│• Waktu Server : ${moment.tz('Asia/Jakarta').format('HH:mm:ss')}
-│• Tanggal Server : ${moment.tz('Asia/Jakarta').format('DD/MM/YY')}
-│• Menuju HBD GuaAbuzz :
-│   ${menuju}
-│• Wib : ${wib}
-│• Wita : ${wita}
-│• Wit : ${wit}
-└──────────────┈❖`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '📖Simple Menu' }, type: 1 },{ buttonId: 'allmenu', buttonText: { displayText: '📖All Menu' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
-            }
-            break
-            case 'allmenu':
-            case 'menuall': {
-                anu = `┌────────┈❖
-│「 Hi, ${pushname}👋 」
-│「 ${ucapanWaktu} 」
-└┬─────────────┈❖
-┌┤「 INFO BOT 」
-│└─────────────┈❖
-│ Prefix : ( ${prefix} )
-│ Name : ${global.namabot}\n│ Owner : ${global.namaowner}
-│ Mode : ${akame.public ? 'Public' : 'Self'}
-│ User : ${Object.keys(global.db.data.users).length}
-│ Premium : ${isPremium ? '✅' : `❌`}
-│ Limit : ${isPremium ? '♾Infinity' : `〽️${db.data.users[m.sender].limit}`}
-│ Runtime : ${runtime(process.uptime())}
-│ Lib : Baileys-md
-│ Menuju HBD GuaAbuzz :
-│  ${menuju}
-└┬─────────────┈❖
-┌┤「 ANONYMOUS CHAT 」
-│└─────────────┈❖
-│⭔ ${prefix}menfess
-│⭔ ${prefix}anonymous
-│⭔ ${prefix}start
-│⭔ ${prefix}next
-│⭔ ${prefix}keluar
-└┬─────────────┈❖
-┌┤「 ANIME 」
-│└─────────────┈❖
-│⭔ ${prefix}hololive
-│⭔ ${prefix}couples
-│⭔ ${prefix}couple
-│⭔ ${prefix}waifu
-│⭔ ${prefix}husbu
-│⭔ ${prefix}neko
-│⭔ ${prefix}uniform
-│⭔ ${prefix}cosplay
-│⭔ ${prefix}maid
-│⭔ ${prefix}oppai
-│⭔ ${prefix}selfies
-│⭔ ${prefix}shinobu
-│⭔ ${prefix}akira
-│⭔ ${prefix}akiyama
-│⭔ ${prefix}ana
-│⭔ ${prefix}asuna
-│⭔ ${prefix}ayuzawa
-│⭔ ${prefix}boruto
-│⭔ ${prefix}chitoge
-│⭔ ${prefix}deidara
-│⭔ ${prefix}doraemon
-│⭔ ${prefix}elaina
-│⭔ ${prefix}emilia
-│⭔ ${prefix}erza
-│⭔ ${prefix}gremory
-│⭔ ${prefix}hestia
-│⭔ ${prefix}hinata
-│⭔ ${prefix}inori
-│⭔ ${prefix}isuzu
-│⭔ ${prefix}itachi
-│⭔ ${prefix}itori
-│⭔ ${prefix}kaga
-│⭔ ${prefix}kagura
-│⭔ ${prefix}kakasih
-│⭔ ${prefix}kaori
-│⭔ ${prefix}keneki
-│⭔ ${prefix}kotori
-│⭔ ${prefix}kurumi
-│⭔ ${prefix}loli
-│⭔ ${prefix}madara
-│⭔ ${prefix}mikasa
-│⭔ ${prefix}miku
-│⭔ ${prefix}minato
-│⭔ ${prefix}naruto
-│⭔ ${prefix}nezuko
-│⭔ ${prefix}onepiece
-│⭔ ${prefix}pokemon
-│⭔ ${prefix}rize
-│⭔ ${prefix}sagiri
-│⭔ ${prefix}sakura
-│⭔ ${prefix}shinka
-│⭔ ${prefix}shizuka
-│⭔ ${prefix}shouta
-│⭔ ${prefix}toukachan
-│⭔ ${prefix}tsunade
-│⭔ ${prefix}yuki
-│⭔ ${prefix}raiden
-│⭔ ${prefix}calliope
-│⭔ ${prefix}kitagawa
-└┬─────────────┈❖
-┌┤「 ASUPAN 」
-│└─────────────┈❖
-│⭔ ${prefix}cecan
-│⭔ ${prefix}cogan
-│⭔ ${prefix}china
-│⭔ ${prefix}japan
-│⭔ ${prefix}korea
-│⭔ ${prefix}indonesia
-│⭔ ${prefix}malaysia
-│⭔ ${prefix}thailand
-│⭔ ${prefix}vietnam
-│⭔ ${prefix}blankpink
-│⭔ ${prefix}justina
-│⭔ ${prefix}kpop
-│⭔ ${prefix}rose
-│⭔ ${prefix}ryujin
-└┬─────────────┈❖
-┌┤「 CONVERT 」
-│└─────────────┈❖
-│⭔ ${prefix}nulis
-│⭔ ${prefix}removebg [image]
-│⭔ ${prefix}toimage [reply sticker]
-│⭔ ${prefix}tovideo [reply sticker]
-│⭔ ${prefix}togif [reply sticker]
-│⭔ ${prefix}tourl [image / video]
-│⭔ ${prefix}tovn [reply video]
-│⭔ ${prefix}tomp3 [reply video]
-│⭔ ${prefix}toaudio [reply video]
-└┬─────────────┈❖
-┌┤「 DOWNLOADER 」
-│└─────────────┈❖
-│⭔ ${prefix}tiktoknowm [url]
-│⭔ ${prefix}tiktokwm [url]
-│⭔ ${prefix}tiktokmp3 [url]
-│⭔ ${prefix}instagram [url]
-│⭔ ${prefix}instastory [url]
-│⭔ ${prefix}twitter [url]
-│⭔ ${prefix}twittermp3 [url]
-│⭔ ${prefix}facebook [url]
-│⭔ ${prefix}zippyshare [url]
-│⭔ ${prefix}mediafire [url]
-│⭔ ${prefix}ytmp3 [url]
-│⭔ ${prefix}ytmp4 [url]
-│⭔ ${prefix}getmusic [query]
-│⭔ ${prefix}getvideo [query]
-│⭔ ${prefix}umma [url]
-│⭔ ${prefix}joox [query]
-│⭔ ${prefix}soundcloud [url]
-└┬─────────────┈❖
-┌┤「 DATABASE 」
-│└─────────────┈❖
-│⭔ ${prefix}setcmd [reply sticker/pesan]
-│⭔ ${prefix}listcmd
-│⭔ ${prefix}delcmd [reply sticker/pesan]
-│⭔ ${prefix}lockcmd
-│⭔ ${prefix}addmsg
-│⭔ ${prefix}listmsg
-│⭔ ${prefix}getmsg
-│⭔ ${prefix}delmsg
-└┬─────────────┈❖
-┌┤「 EPHOTO 」
-│└─────────────┈❖
-│⭔ ${prefix}logo2
-│⭔ ${prefix}logo3
-│⭔ ${prefix}logo4
-│⭔ ${prefix}logogaming
-│⭔ ${prefix}logogirl
-│⭔ ${prefix}logogold
-│⭔ ${prefix}spiderlogo
-│⭔ ${prefix}ffcover
-│⭔ ${prefix}crossfire
-│⭔ ${prefix}galaxy
-│⭔ ${prefix}glass
-│⭔ ${prefix}neon
-│⭔ ${prefix}beach
-│⭔ ${prefix}awan
-│⭔ ${prefix}flower
-│⭔ ${prefix}bohlam
-│⭔ ${prefix}kaligrafi
-│⭔ ${prefix}coklat
-│⭔ ${prefix}quotes
-│⭔ ${prefix}grafity
-│⭔ ${prefix}marmer
-│⭔ ${prefix}musimsemi
-│⭔ ${prefix}ruby
-│⭔ ${prefix}shadowtext
-│⭔ ${prefix}starlogo
-│⭔ ${prefix}starnight
-│⭔ ${prefix}starnight2
-│⭔ ${prefix}blackpink
-│⭔ ${prefix}cake
-│⭔ ${prefix}flashlight
-│⭔ ${prefix}puppycute
-│⭔ ${prefix}yasuologo
-│⭔ ${prefix}certificate
-│⭔ ${prefix}igcertificate
-│⭔ ${prefix}ytcertificate
-└┬─────────────┈❖
-┌┤「 GROUP 」
-│└─────────────┈❖
-│⭔ ${prefix}linkgroup
-│⭔ ${prefix}revoke 
-│⭔ ${prefix}tagmenu [option]
-│⭔ ${prefix}ephemeral [option]
-│⭔ ${prefix}setppgrup full [image]
-│⭔ ${prefix}setname [text]
-│⭔ ${prefix}setdesc [text]
-│⭔ ${prefix}group [option]
-│⭔ ${prefix}editinfo [option]
-│⭔ ${prefix}add @user
-│⭔ ${prefix}kick @user
-│⭔ ${prefix}hidetag [text]
-│⭔ ${prefix}tagall [text]
-│⭔ ${prefix}totag [reply]
-│⭔ ${prefix}promote @user
-│⭔ ${prefix}demote @user
-│⭔ ${prefix}mute [on/off]
-│⭔ ${prefix}antilink [on/off]
-│⭔ ${prefix}antilinkyt [on/off]
-│⭔ ${prefix}antilinktt [on/off]
-│⭔ ${prefix}vote [text]
-│⭔ ${prefix}devote
-│⭔ ${prefix}upvote
-│⭔ ${prefix}cekvote
-│⭔ ${prefix}hapusvote
-└┬─────────────┈❖
-┌┤「 GAME 」
-│└─────────────┈❖
-│⭔ ${prefix}delttt
-│⭔ ${prefix}tictactoe
-│⭔ ${prefix}family100
-│⭔ ${prefix}tebakmenu [option]
-│⭔ ${prefix}math [mode]
-│⭔ ${prefix}suitpvp [@tag]
-└┬─────────────┈❖
-┌┤「 ISLAMIC 」
-│└─────────────┈❖
-│⭔ ${prefix}iqra
-│⭔ ${prefix}hadist
-│⭔ ${prefix}alquran
-│⭔ ${prefix}juzamma
-│⭔ ${prefix}kisahnabi
-│⭔ ${prefix}tafsirsurah
-│⭔ ${prefix}jadwalsholat
-│⭔ ${prefix}niatsholat
-│⭔ ${prefix}kisahmuslim
-│⭔ ${prefix}asmaulhusna
-└┬─────────────┈❖
-┌┤「 KERANG 」
-│└─────────────┈❖
-│⭔ ${prefix}apakah [teks]
-│⭔ ${prefix}bisakah [teks]
-│⭔ ${prefix}bagaimanakah [teks]
-│⭔ ${prefix}rate [teks]
-│⭔ ${prefix}kapankah [teks]
-│⭔ ${prefix}cekganteng [teks]
-│⭔ ${prefix}cekcantik [teks]
-│⭔ ${prefix}ceksange [teks]
-│⭔ ${prefix}cekgay [teks]
-│⭔ ${prefix}ceklesbi [teks]
-│⭔ ${prefix}cekmati [teks]
-│⭔ ${prefix}wangy [teks]
-│⭔ ${prefix}halah [teks]
-│⭔ ${prefix}hilih [teks]
-│⭔ ${prefix}huluh [teks]
-│⭔ ${prefix}heleh [teks]
-│⭔ ${prefix}holoh [teks]
-│⭔ ${prefix}jadian [teks]
-│⭔ ${prefix}jodohku [teks]
-└┬─────────────┈❖
-┌┤「 MEME 」
-│└─────────────┈❖
-│⭔ ${prefix}animememe
-│⭔ ${prefix}anjing
-│⭔ ${prefix}meme
-│⭔ ${prefix}memeindo
-│⭔ ${prefix}darkjoke
-│⭔ ${prefix}darkjokes
-│⭔ ${prefix}onecak
-└┬─────────────┈❖
-┌┤「 MAIN 」
-│└─────────────┈❖
-│⭔ ${prefix}ping
-│⭔ ${prefix}owner
-│⭔ ${prefix}donasi
-│⭔ ${prefix}menu / ${prefix}help / ${prefix}?
-│⭔ ${prefix}delete / ${prefix}del / ${prefix}d
-│⭔ ${prefix}infochat
-│⭔ ${prefix}quoted
-│⭔ ${prefix}listpc
-│⭔ ${prefix}listgc
-│⭔ ${prefix}listonline
-│⭔ ${prefix}speedtest
-│⭔ ${prefix}request [req]
-│⭔ ${prefix}report [bug]
-└┬─────────────┈❖
-┌┤「 OWNER 」
-│└─────────────┈❖
-│⭔ ${prefix}setnamabot
-│⭔ ${prefix}setbiobot
-│⭔ ${prefix}react [emoji]
-│⭔ ${prefix}shutdown
-│⭔ ${prefix}autosw
-│⭔ ${prefix}myip
-│⭔ ${prefix}setexif
-│⭔ ${prefix}chat [option]
-│⭔ ${prefix}join [link]
-│⭔ ${prefix}leave
-│⭔ ${prefix}block @user
-│⭔ ${prefix}unblock @user
-│⭔ ${prefix}bcgroup [text]
-│⭔ ${prefix}bcall [text]
-│⭔ ${prefix}setppbot full [image]
-│⭔ ${prefix}setmenu [option]
-│⭔ ${prefix}setstatus
-│⭔ ${prefix}setnamebot
-└┬─────────────┈❖
-┌┤「 PRIMBON 」
-│└─────────────┈❖
-│⭔ ${prefix}nomorhoki
-│⭔ ${prefix}artimimpi
-│⭔ ${prefix}artinama
-│⭔ ${prefix}ramaljodoh
-│⭔ ${prefix}ramaljodohbali
-│⭔ ${prefix}suamiistri
-│⭔ ${prefix}ramalcinta
-│⭔ ${prefix}cocoknama
-│⭔ ${prefix}pasangan
-│⭔ ${prefix}jadiannikah
-│⭔ ${prefix}sifatusaha
-│⭔ ${prefix}rezeki
-│⭔ ${prefix}pekerjaan
-│⭔ ${prefix}nasib
-│⭔ ${prefix}penyakit
-│⭔ ${prefix}tarot
-│⭔ ${prefix}fengshui
-│⭔ ${prefix}haribaik
-│⭔ ${prefix}harisangar
-│⭔ ${prefix}harisial
-│⭔ ${prefix}nagahari
-│⭔ ${prefix}arahrezeki
-│⭔ ${prefix}peruntungan
-│⭔ ${prefix}weton
-│⭔ ${prefix}karakter
-│⭔ ${prefix}keberuntungan
-│⭔ ${prefix}memancing
-│⭔ ${prefix}masasubur
-│⭔ ${prefix}zodiak
-│⭔ ${prefix}shio
-└┬─────────────┈❖
-┌┤「 PHOTO EDITOR 」
-│└─────────────┈❖
-│⭔ ${prefix}gay
-│⭔ ${prefix}contrast
-│⭔ ${prefix}pixelate
-│⭔ ${prefix}dither
-│⭔ ${prefix}sepia
-│⭔ ${prefix}brighten
-│⭔ ${prefix}greyscale
-│⭔ ${prefix}circle
-│⭔ ${prefix}blur
-│⭔ ${prefix}invert
-│⭔ ${prefix}scale
-│⭔ ${prefix}upscale
-│⭔ ${prefix}glass
-│⭔ ${prefix}wasted
-│⭔ ${prefix}passed
-│⭔ ${prefix}comrade
-│⭔ ${prefix}jail
-│⭔ ${prefix}triggered
-└┬─────────────┈❖
-┌┤「 QUOTES 」
-│└─────────────┈❖
-│⭔ ${prefix}quotesanime
-│⭔ ${prefix}animequotes
-│⭔ ${prefix}motivasi
-│⭔ ${prefix}dilanquote
-│⭔ ${prefix}bucinquote
-│⭔ ${prefix}katasenja
-│⭔ ${prefix}randomquote
-│⭔ ${prefix}muslimquote
-│⭔ ${prefix}galauquote
-│⭔ ${prefix}kanyequote
-│⭔ ${prefix}trumpquote
-│⭔ ${prefix}trumpthink
-│⭔ ${prefix}creepyfact
-│⭔ ${prefix}faktaunik
-│⭔ ${prefix}puisi
-│⭔ ${prefix}pantun
-│⭔ ${prefix}cerpen
-└┬─────────────┈❖
-┌┤「 RANDOM 」
-│└─────────────┈❖
-│⭔ ${prefix}simih [teks]
-│⭔ ${prefix}apikey
-│⭔ ${prefix}coffe
-│⭔ ${prefix}ebinary [teks]
-│⭔ ${prefix}dbinary [teks]
-│⭔ ${prefix}styletext [teks]
-└┬─────────────┈❖
-┌┤「 STICKER 」
-│└─────────────┈❖
-│⭔ ${prefix}sticker
-│⭔ ${prefix}stickerwm
-│⭔ ${prefix}attp [teks]
-│⭔ ${prefix}ttp [teks]
-│⭔ ${prefix}mukalu
-│⭔ ${prefix}paimon
-│⭔ ${prefix}amongus
-│⭔ ${prefix}dadu
-│⭔ ${prefix}gura
-│⭔ ${prefix}doge
-│⭔ ${prefix}bucinstick
-│⭔ ${prefix}patrick
-│⭔ ${prefix}emojimix 😎+🤠
-│⭔ ${prefix}emojimix2 😎
-└┬─────────────┈❖
-┌┤「 SEARCH 」
-│└─────────────┈❖
-│⭔ ${prefix}play [query]
-│⭔ ${prefix}yts [query]
-│⭔ ${prefix}google [query]
-│⭔ ${prefix}gimage [query]
-│⭔ ${prefix}pinterest [query]
-│⭔ ${prefix}wallpaper [query]
-│⭔ ${prefix}wikimedia [query]
-│⭔ ${prefix}ytsearch [query]
-│⭔ ${prefix}ringtone [query]
-└┬─────────────┈❖
-┌┤「 STALK 」
-│└─────────────┈❖
-│⭔ ${prefix}cekapi
-│⭔ ${prefix}githubstalk [username]
-│⭔ ${prefix}stalk [option] [query]
-└┬─────────────┈❖
-┌┤「 TEXT PRO 」
-│└─────────────┈❖
-│⭔ ${prefix}3dchristmas
-│⭔ ${prefix}3ddeepsea
-│⭔ ${prefix}americanflag
-│⭔ ${prefix}3dscifi
-│⭔ ${prefix}3drainbow
-│⭔ ${prefix}3dwaterpipe
-│⭔ ${prefix}halloweenskeleton
-│⭔ ${prefix}sketch
-│⭔ ${prefix}bluecircuit
-│⭔ ${prefix}space
-│⭔ ${prefix}metallic
-│⭔ ${prefix}fiction
-│⭔ ${prefix}greenhorror
-│⭔ ${prefix}transformer
-│⭔ ${prefix}berry
-│⭔ ${prefix}thunder
-│⭔ ${prefix}magma
-│⭔ ${prefix}3dcrackedstone
-│⭔ ${prefix}3dneonlight
-│⭔ ${prefix}impressiveglitch
-│⭔ ${prefix}naturalleaves
-│⭔ ${prefix}fireworksparkle
-│⭔ ${prefix}matrix
-│⭔ ${prefix}dropwater
-│⭔ ${prefix}harrypotter
-│⭔ ${prefix}foggywindow
-│⭔ ${prefix}neondevils
-│⭔ ${prefix}christmasholiday
-│⭔ ${prefix}3dgradient
-│⭔ ${prefix}blackpink
-│⭔ ${prefix}gluetext
-└┬─────────────┈❖
-┌┤「 VOICE CHANGER 」
-│└─────────────┈❖
-│⭔ ${prefix}bass
-│⭔ ${prefix}blown
-│⭔ ${prefix}deep
-│⭔ ${prefix}earrape
-│⭔ ${prefix}fast
-│⭔ ${prefix}fat
-│⭔ ${prefix}nightcore
-│⭔ ${prefix}reverse
-│⭔ ${prefix}robot
-│⭔ ${prefix}slow
-│⭔ ${prefix}tupai
-└┬─────────────┈❖
-┌┤「 WEBZONE 」
-│└─────────────┈❖
-│⭔ ${prefix}jadwaltv
-│⭔ ${prefix}playstore
-│⭔ ${prefix}gsmarena
-│⭔ ${prefix}jadwalbioskop
-│⭔ ${prefix}nowplayingbioskop
-│⭔ ${prefix}aminio
-│⭔ ${prefix}wattpad
-│⭔ ${prefix}webtoons
-│⭔ ${prefix}drakor
-└┬─────────────┈❖
-┌┤「 WALLPAPER 」
-│└─────────────┈❖
-│⭔ ${prefix}cyberspace
-│⭔ ${prefix}mountain
-│⭔ ${prefix}programming
-│⭔ ${prefix}technology
-│⭔ ${prefix}aesthetic
-│⭔ ${prefix}boneka
-│⭔ ${prefix}hekel
-│⭔ ${prefix}kucing
-│⭔ ${prefix}mobil
-│⭔ ${prefix}motor
-│⭔ ${prefix}pubg
-│⭔ ${prefix}wallhp
-└──────────────┈❖`
-                let buttons = [{ buttonId: 'command', buttonText: { displayText: '⬅️Back' }, type: 1 },{ buttonId: 'rules', buttonText: { displayText: '📖Rules' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: '🙏Donasi' }, type: 1 }]
-            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fkontak)
+                anu = `
+ Hi, ${pushname}👋 
+ ${ucapanWaktu} 
+
+ RULES BOT 
+
+1. Tolong Gunakan Delay 5 Detik
+   Untuk Menggukan BOT.
+2. Cuilk Bot Tanpa Izin? Group
+   Ya Gua Kudeta 😎
+2. Gunakan Dengan Bijak.
+3. Don't Call Bots.
+4. Don't Spam Bot.
+
+ SNK 
+
+1. Data Whatsapp Anda Akan Kami
+   Simpan Di Server Kami
+   Selama BOT Aktif.
+2. Data Anda Akan Di Hapus
+   Ketika BOT OFF.
+3. Kami Tidak Menyimpan Gambar/
+   Video/File/Audio/Dokumen
+   Yang Anda Kirim.
+4. Kami Tidak Pernah Meminta
+   Anda Untuk Memberikan
+   Informasi Pribadi.
+5. Jika Menemukan BUG/ERROR
+   Silahkan REPORT!.
+
+ ATTENTION 
+
+1. Bot Akan Memblokir Nomor Anda.
+2. Anda Tidak Akan Bisa.
+   Mengakses Bot Lagi.
+3. Mengeksploitasi Terhadap bot.
+Sanksi: BLOCK PERMANENT
+`
+                let buttons = [{ buttonId: 'owner', buttonText: { displayText: 'Owner 👤' }, type: 1 },{ buttonId: 'rules', buttonText: { displayText: 'Rules Bot 📌' }, type: 1 },{ buttonId: 'donasi', buttonText: { displayText: 'Donasi 👑' }, type: 1 }]
+            await akame.sendButtonText(m.chat, buttons, anu, akame.user.name, fgclink)
             }
             break
             default:
@@ -7131,7 +5822,7 @@ Request Message: ${text}`
         	let buttons = [
                     { buttonId: `owner`, buttonText: { displayText: 'Chat Owner' }, type: 1 }
                 ]
-			akame.sendMessage(m.chat, { text:`INVITE DETECT\n\nMau masukin bot ini ke group kamu?`, title: 'LINK GROUP DECTETED', footer: '© 2022 GuaAbuzz', buttons: buttons, headerType: 5 })
+			akame.sendMessage(m.chat, { text:`INVITE DETECT\n\nMau masukin bot ini ke group kamu?`, title: 'LINK GROUP DECTETED', footer: '⌗MODZ BOTZ @2022 ©BY KIAN', buttons: buttons, headerType: 5 })
 		}
                 if (budy.startsWith('=>')) {
                     if (!isCreator) return m.reply(mess.owner)
