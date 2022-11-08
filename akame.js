@@ -1098,473 +1098,6 @@ Silahkan @${m.mentionedJid[0].split`@`[0]} untuk ketik terima/tolak`
                 m.reply(`Sama-Sama Kak ${pushname}`)
                 }
                 break
-                case 'menu': {
-                m.reply(`SUPPORT ME 🙏
-My Youtube: https://bit.ly/3U4rAvr
-Donasi: https://saweria.co/Kianganz
-Grub: https://bit.ly/3gRsxJn
-
-ANONYMOUS CHAT
-  ${prefix}anonymous
-  ${prefix}start
-  ${prefix}next
-  ${prefix}keluar
-  ${prefix}menfes
-  ${prefix}confes
-  ${prefix}menfesconfirm
-
- ANIME
-  ${prefix}hololive
-  ${prefix}couples
-  ${prefix}couple
-  ${prefix}waifu
-  ${prefix}husbu
-  ${prefix}neko
-  ${prefix}uniform
-  ${prefix}cosplay
-  ${prefix}maid
-  ${prefix}oppai
-  ${prefix}selfies
-  ${prefix}shinobu
-  ${prefix}akira
-  ${prefix}akiyama
-  ${prefix}ana
-  ${prefix}asuna
-  ${prefix}ayuzawa
-  ${prefix}boruto
-  ${prefix}chitoge
-  ${prefix}deidara
-  ${prefix}doraemon
-  ${prefix}elaina
-  ${prefix}emilia
-  ${prefix}erza
-  ${prefix}gremory
-  ${prefix}hestia
-  ${prefix}hinata
-  ${prefix}inori
-  ${prefix}isuzu
-  ${prefix}itachi
-  ${prefix}itori
-  ${prefix}kaga
-  ${prefix}kagura
-  ${prefix}kakasih
-  ${prefix}kaori
-  ${prefix}keneki
-  ${prefix}kotori
-  ${prefix}kurumi
-  ${prefix}loli
-  ${prefix}madara
-  ${prefix}mikasa
-  ${prefix}miku
-  ${prefix}minato
-  ${prefix}naruto
-  ${prefix}nezuko
-  ${prefix}onepiece
-  ${prefix}pokemon
-  ${prefix}rize
-  ${prefix}sagiri
-  ${prefix}sakura
-  ${prefix}shinka
-  ${prefix}shizuka
-  ${prefix}shouta
-  ${prefix}toukachan
-  ${prefix}tsunade
-  ${prefix}yuki
-  ${prefix}raiden
-  ${prefix}calliope
-  ${prefix}kitagawa
-
- ASUPAN 
-  ${prefix}cecan
-  ${prefix}cogan
-  ${prefix}china
-  ${prefix}japan
-  ${prefix}korea
-  ${prefix}indonesia
-  ${prefix}malaysia
-  ${prefix}thailand
-  ${prefix}vietnam
-  ${prefix}blankpink
-  ${prefix}justina
-  ${prefix}kpop
-  ${prefix}rose
-  ${prefix}ryujin
-
- CONVERT 
-  ${prefix}nulis
-  ${prefix}removebg [image]
-  ${prefix}toimage [reply sticker]
-  ${prefix}tovideo [reply sticker]
-  ${prefix}togif [reply sticker]
-  ${prefix}tourl [image / video]
-  ${prefix}tovn [reply video]
-  ${prefix}tomp3 [reply video]
-  ${prefix}toaudio [reply video]
-
- DOWNLOADER 
-  ${prefix}tiktoknowm [url]
-  ${prefix}tiktokwm [url]
-  ${prefix}tiktokmp3 [url]
-  ${prefix}instagram [url]
-  ${prefix}instastory [url]
-  ${prefix}twitter [url]
-  ${prefix}twittermp3 [url]
-  ${prefix}facebook [url]
-  ${prefix}zippyshare [url]
-  ${prefix}mediafire [url]
-  ${prefix}ytmp3 [url]
-  ${prefix}ytmp4 [url]
-  ${prefix}getmusic [query]
-  ${prefix}getvideo [query]
-  ${prefix}umma [url]
-  ${prefix}joox [query]
-  ${prefix}soundcloud [url]
-
- DATABASE 
-  ${prefix}setcmd [reply sticker/pesan]
-  ${prefix}listcmd
-  ${prefix}delcmd [reply sticker/pesan]
-  ${prefix}lockcmd
-  ${prefix}addmsg
-  ${prefix}listmsg
-  ${prefix}getmsg
-  ${prefix}delmsg
- 
- EPHOTO 
-  ${prefix}logo2
-  ${prefix}logo3
-  ${prefix}logo4
-  ${prefix}logogaming
-  ${prefix}logogirl
-  ${prefix}logogold
-  ${prefix}spiderlogo
-  ${prefix}ffcover
-  ${prefix}crossfire
-  ${prefix}galaxy
-  ${prefix}glass
-  ${prefix}neon
-  ${prefix}beach
-  ${prefix}awan
-  ${prefix}flower
-  ${prefix}bohlam
-  ${prefix}kaligrafi
-  ${prefix}coklat
-  ${prefix}quotes
-  ${prefix}grafity
-  ${prefix}marmer
-  ${prefix}musimsemi
-  ${prefix}ruby
-  ${prefix}shadowtext
-  ${prefix}starlogo
-  ${prefix}starnight
-  ${prefix}starnight2
-  ${prefix}blackpink
-  ${prefix}cake
-  ${prefix}flashlight
-  ${prefix}puppycute
-  ${prefix}yasuologo
-  ${prefix}certificate
-  ${prefix}igcertificate
-  ${prefix}ytcertificate
-
- GROUP 
-  ${prefix}linkgroup
-  ${prefix}tagall [text]
-  ${prefix}revoke 
-  ${prefix}tagmenu [option]
-  ${prefix}ephemeral [option]
-  ${prefix}setppgrup full [image]
-  ${prefix}setname [text]
-  ${prefix}setdesc [text]
-  ${prefix}group [option]
-  ${prefix}editinfo [option]
-  ${prefix}kick @user
-  ${prefix}+ @user
-  ${prefix}- @user
-  ${prefix}hidetag [text]
-  ${prefix}totag [reply]
-  ${prefix}promote @user
-  ${prefix}demote @user
-  ${prefix}mute [on/off]
-  ${prefix}antilink [on/off]
-  ${prefix}antilinkyt [on/off]
-  ${prefix}antilinktt [on/off]
-  ${prefix}vote [text]
-  ${prefix}devote
-  ${prefix}upvote
-  ${prefix}cekvote
-  ${prefix}hapusvote
-  ${prefix}intro
-
- GAME 
-  ${prefix}delttt
-  ${prefix}tictactoe
-  ${prefix}family100
-  ${prefix}tebakmenu [option]
-  ${prefix}math [mode]
-  ${prefix}suitpvp [@tag]
-
- ISLAMIC 
-  ${prefix}iqra
-  ${prefix}hadist
-  ${prefix}alquran
-  ${prefix}juzamma
-  ${prefix}kisahnabi
-  ${prefix}tafsirsurah
-  ${prefix}jadwalsholat
-  ${prefix}niatsholat
-  ${prefix}kisahmuslim
-  ${prefix}asmaulhusna
-
- KERANG 
-  ${prefix}apakah [teks]
-  ${prefix}bisakah [teks]
-  ${prefix}bagaimanakah [teks]
-  ${prefix}rate [teks]
-  ${prefix}kapankah [teks]
-  ${prefix}cekganteng [teks]
-  ${prefix}cekcantik [teks]
-  ${prefix}ceksange [teks]
-  ${prefix}cekgay [teks]
-  ${prefix}ceklesbi [teks]
-  ${prefix}cekmati [teks]
-  ${prefix}wangy [teks]
-  ${prefix}halah [teks]
-  ${prefix}hilih [teks]
-  ${prefix}huluh [teks]
-  ${prefix}heleh [teks]
-  ${prefix}holoh [teks]
-  ${prefix}jadian [teks]
-  ${prefix}jodohku [teks]
-
- MEME 
-  ${prefix}animememe
-  ${prefix}anjing
-  ${prefix}meme
-  ${prefix}memeindo
-  ${prefix}darkjoke
-  ${prefix}darkjokes
-  ${prefix}onecak
-
- MAIN 
-  ${prefix}ping
-  ${prefix}owner
-  ${prefix}donasi
-  ${prefix}delete
-  ${prefix}infochat
-  ${prefix}quoted
-  ${prefix}listpc
-  ${prefix}listgc
-  ${prefix}listonline
-  ${prefix}speedtest
-
- OWNER 
-  ${prefix}setnamabot
-  ${prefix}setbiobot
-  ${prefix}react [emoji]
-  ${prefix}shutdown
-  ${prefix}autosw
-  ${prefix}myip
-  ${prefix}setexif
-  ${prefix}chat [option]
-  ${prefix}join [link]
-  ${prefix}leave
-  ${prefix}block @user
-  ${prefix}unblock @user
-  ${prefix}bcgroup [text]
-  ${prefix}bcall [text]
-  ${prefix}setppbot full [image]
-  ${prefix}setmenu [option]
-  ${prefix}setstatus
-  ${prefix}setnamebot
-  ${prefix}o-tagall
-  ${prefix}o-hidetag
-  ${prefix}o-add
-  ${prefix}o-kick
-
- PRIMBON 
-  ${prefix}nomorhoki
-  ${prefix}artimimpi
-  ${prefix}artinama
-  ${prefix}ramaljodoh
-  ${prefix}ramaljodohbali
-  ${prefix}suamiistri
-  ${prefix}ramalcinta
-  ${prefix}cocoknama
-  ${prefix}pasangan
-  ${prefix}jadiannikah
-  ${prefix}sifatusaha
-  ${prefix}rezeki
-  ${prefix}pekerjaan
-  ${prefix}nasib
-  ${prefix}penyakit
-  ${prefix}tarot
-  ${prefix}fengshui
-  ${prefix}haribaik
-  ${prefix}harisangar
-  ${prefix}harisial
-  ${prefix}nagahari
-  ${prefix}arahrezeki
-  ${prefix}peruntungan
-  ${prefix}weton
-  ${prefix}karakter
-  ${prefix}keberuntungan
-  ${prefix}memancing
-  ${prefix}masasubur
-  ${prefix}zodiak
-  ${prefix}shio
-
- PHOTO EDITOR 
-  ${prefix}gay
-  ${prefix}contrast
-  ${prefix}pixelate
-  ${prefix}dither
-  ${prefix}sepia
-  ${prefix}brighten
-  ${prefix}greyscale
-  ${prefix}circle
-  ${prefix}blur
-  ${prefix}invert
-  ${prefix}scale
-  ${prefix}upscale
-  ${prefix}glass
-  ${prefix}wasted
-  ${prefix}passed
-  ${prefix}comrade
-  ${prefix}jail
-  ${prefix}triggered
-
- QUOTES 
-  ${prefix}quotesanime
-  ${prefix}animequotes
-  ${prefix}motivasi
-  ${prefix}dilanquote
-  ${prefix}bucinquote
-  ${prefix}katasenja
-  ${prefix}randomquote
-  ${prefix}muslimquote
-  ${prefix}galauquote
-  ${prefix}kanyequote
-  ${prefix}trumpquote
-  ${prefix}trumpthink
-  ${prefix}creepyfact
-  ${prefix}faktaunik
-  ${prefix}puisi
-  ${prefix}pantun
-  ${prefix}cerpen
-
- RANDOM 
-  ${prefix}simih [teks]
-  ${prefix}apikey
-  ${prefix}coffe
-  ${prefix}ebinary [teks]
-  ${prefix}dbinary [teks]
-  ${prefix}styletext [teks]
-
- STICKER 
-  ${prefix}sticker
-  ${prefix}stickerwm
-  ${prefix}attp [teks]
-  ${prefix}ttp [teks]
-  ${prefix}mukalu
-  ${prefix}paimon
-  ${prefix}amongus
-  ${prefix}dadu
-  ${prefix}gura
-  ${prefix}doge
-  ${prefix}bucinstick
-  ${prefix}patrick
-  ${prefix}emojimix [emoji+emoji]
-  ${prefix}emojimix2 [emoji]
-
- SEARCH 
-  ${prefix}play [query]
-  ${prefix}yts [query]
-  ${prefix}google [query]
-  ${prefix}gimage [query]
-  ${prefix}pinterest [query]
-  ${prefix}wallpaper [query]
-  ${prefix}wikimedia [query]
-  ${prefix}ytsearch [query]
-  ${prefix}ringtone [query]
-
- STALK 
-  ${prefix}cekapi
-  ${prefix}githubstalk [username]
-  ${prefix}stalk [option] [query]
-
- TEXT PRO 
-  ${prefix}3dchristmas
-  ${prefix}3ddeepsea
-  ${prefix}americanflag
-  ${prefix}3dscifi
-  ${prefix}3drainbow
-  ${prefix}3dwaterpipe
-  ${prefix}halloweenskeleton
-  ${prefix}sketch
-  ${prefix}bluecircuit
-  ${prefix}space
-  ${prefix}metallic
-  ${prefix}fiction
-  ${prefix}greenhorror
-  ${prefix}transformer
-  ${prefix}berry
-  ${prefix}thunder
-  ${prefix}magma
-  ${prefix}3dcrackedstone
-  ${prefix}3dneonlight
-  ${prefix}impressiveglitch
-  ${prefix}naturalleaves
-  ${prefix}fireworksparkle
-  ${prefix}matrix
-  ${prefix}dropwater
-  ${prefix}harrypotter
-  ${prefix}foggywindow
-  ${prefix}neondevils
-  ${prefix}christmasholiday
-  ${prefix}3dgradient
-  ${prefix}blackpink
-  ${prefix}gluetext
-
- VOICE CHANGER 
-  ${prefix}bass
-  ${prefix}blown
-  ${prefix}deep
-  ${prefix}earrape
-  ${prefix}fast
-  ${prefix}fat
-  ${prefix}nightcore
-  ${prefix}reverse
-  ${prefix}robot
-  ${prefix}slow
-  ${prefix}tupai
-
- WEBZONE 
-  ${prefix}jadwaltv
-  ${prefix}playstore
-  ${prefix}gsmarena
-  ${prefix}jadwalbioskop
-  ${prefix}nowplayingbioskop
-  ${prefix}aminio
-  ${prefix}wattpad
-  ${prefix}webtoons
-  ${prefix}drakor
-
- WALLPAPER 
-  ${prefix}cyberspace
-  ${prefix}mountain
-  ${prefix}programming
-  ${prefix}technology
-  ${prefix}aesthetic
-  ${prefix}boneka
-  ${prefix}hekel
-  ${prefix}kucing
-  ${prefix}mobil
-  ${prefix}motor
-  ${prefix}pubg
-  ${prefix}wallhp`)
-                }
-                break
                 //Case Cek Prefix
             case 'cekpref':
             case 'cekprefix': {
@@ -1572,16 +1105,12 @@ ANONYMOUS CHAT
                 }
                 break
                 //Balas Cepat
-            case 'bot': {
-                m.reply(`bantu subscribe https://youtube.com/channel/UC5mUj5o2S4zwwGNbPA2J31Q`)
+            case 'limit': {
+                m.reply(`📌Limit : ${isPremium ? '♾Infinity' : `${db.data.users[m.sender].limit}`}`)
                 }
                 break
                 case 'sewa': {
                 m.reply(`5k/10Hari Minat Chat`)
-                }
-                break
-                case '🗿': {
-                m.reply(`bantu subscribe https://youtube.com/channel/UC5mUj5o2S4zwwGNbPA2J31Q`)
                 }
                 break
                 case 'intro': {
@@ -1590,7 +1119,7 @@ ANONYMOUS CHAT
 │𝙉𝘼𝙈𝘼:
 │𝙆𝙀𝙇𝘼𝙎:
 │𝙂𝙀𝙉𝘿𝙀𝙍:
-│𝘼𝙎𝙆𝙊𝙏
+│𝘼𝙎𝙆𝙊𝙏:
 │
 │𝗝𝗮𝗻𝗴𝗮𝗻 𝗟𝘂𝗽𝗮 𝗜𝗻𝘁𝗿𝗼 𝗬𝗮✨
 ╰─────༺♡༻──────╯
@@ -2292,6 +1821,7 @@ All My Friends.`)
              }
              break
             case 'join': {
+                if (m.isGroup) return m.reply('Fitur Tidak Dapat Digunakan Untuk Group!')
                 if (!text) throw 'Masukkan Link Group!'
                 if (!isUrl(args[0]) && !args[0].includes('whatsapp.com')) throw 'Link Invalid!'
                 m.reply(mess.wait)
@@ -2351,8 +1881,7 @@ All My Friends.`)
 		await akame.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
 		    }
 		    break
-	        case '+':
-		    case 'add': {
+	        case '+': case 'add': {
                 if (!m.isGroup) throw mess.group
                 if (!isAdmins && !isGroupOwner && !isCreator) throw mess.admin
                 if (!isBotAdmins) throw mess.botAdmin
@@ -2360,8 +1889,7 @@ All My Friends.`)
                 await akame.groupParticipantsUpdate(m.chat, [users], 'add').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
 		    }
             break
-            case '-':
-            case 'kick': {
+            case '-': case 'kick': {
                 if (!m.isGroup) throw mess.group
                 if (!isAdmins && !isGroupOwner && !isCreator) throw mess.admin
                 if (!isBotAdmins) throw mess.botAdmin
@@ -2376,15 +1904,6 @@ All My Friends.`)
          if (!isAdmins) throw vnAdmin(from)
 		let users = m.mentionedJid[0] ? m.mentionedJid[0] : m.quoted ? m.quoted.sender : text.replace(/[^0-9]/g, '')+'@s.whatsapp.net'
 		await akame.groupParticipantsUpdate(m.chat, [users], 'remove').then((res) => m.reply(jsonformat(res))).catch((err) => m.reply(jsonformat(err)))
-            }
-            break
-            case 'culik': {
-                if (args.length < 1) return m.reply('_*Masukin id grupnya tolol*_')
-                let pantek = []
-                for (let i of groupMembers) {
-                    pantek.push(i.jid)
-                }
-                akame.groupParticipantsUpdate(args[0], pantek)
             }
             break
             case 'promote': {
@@ -2463,7 +1982,7 @@ let teks = `*👥 Tag All By Bot*
                 })
             }
             break
-            case 'o-hidetag': {
+            case 'o-hidetag': case 'h': {
                 if (!isCreator) return
             if (!m.isGroup) throw mess.group
             akame.sendMessage(m.chat, { text : q ? q : '' , mentions: participants.map(a => a.id)}, { quoted: m })
@@ -2476,6 +1995,24 @@ let teks = `*👥 Tag All By Bot*
                if (!m.quoted) throw `Reply pesan dengan caption ${prefix + command}`
                akame.sendMessage(m.chat, { forward: m.quoted.fakeObj, mentions: participants.map(a => a.id) })
                }
+               break
+case 'menu':
+sendohlxMessage(from, { 
+text: `🗿`,
+mentions:[sender],
+contextInfo:{
+mentionedJid:[sender],
+"externalAdReply": {
+"showAdAttribution": true,
+"renderLargerThumbnail": true,
+"containsAutoReply": true,
+"mediaType": 1, 
+"thumbnail": ppnyauser,
+"mediaUrl": 'https://chat.whatsapp.com/CNf3yQ3N5omBMVJy3xpvRt',
+"sourceUrl": 'https://chat.whatsapp.com/CNf3yQ3N5omBMVJy3xpvRt'
+}
+}
+})
                break
             case 'antilink': {
                 if (!m.isGroup) throw mess.group
@@ -2715,7 +2252,6 @@ let teks = `*👥 Tag All By Bot*
 
                 let buttonMessageVote = {
                     text: teks_vote,
-                    footer: akame.user.name,
                     buttons: buttonsVote,
                     headerType: 1
                 }
@@ -2772,7 +2308,6 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 
                 let buttonMessageUpvote = {
                     text: teks_vote,
-                    footer: akame.user.name,
                     buttons: buttonsUpvote,
                     headerType: 1,
                     mentions: menvote
@@ -2830,7 +2365,6 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 
                 let buttonMessageDevote = {
                     text: teks_vote,
-                    footer: akame.user.name,
                     buttons: buttonsDevote,
                     headerType: 1,
                     mentions: menvote
@@ -3512,7 +3046,6 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                             url: images
                         },
                         caption: `*------- GIMAGE SEARCH -------*\n🤠 *Query* : ${text}\n🔗 *Media Url* : ${images}`,
-                        footer: akame.user.name,
                         buttons: buttons,
                         headerType: 4
                     }
@@ -3561,7 +3094,6 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 💻 Channel : ${anu.author.url}
 💬 Description : ${anu.description}
 🔗 Url : ${anu.url}`,
-                    footer: akame.user.name,
                     buttons: buttons,
                     headerType: 4
                 }
@@ -3686,7 +3218,6 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let buttonMessage = {
                     image: { url: result },
                     caption: `*Klik Next Untuk Melanjutkan*`,
-                    footer: akame.user.name,
                     buttons: buttons,
                     headerType: 4
                 }
@@ -3705,8 +3236,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
             case 'maid':
             case 'oppai':
             case 'selfies':
-            case 'cosplay':
-            case 'hololive': {
+            case 'cosplay': {
                 m.reply(mess.wait)
                 if (!isPremium && global.db.data.users[m.sender].limit < 1) return m.reply(mess.endLimit) // respon ketika limit habis
                 db.data.users[m.sender].limit -= 1 // -1 limit
@@ -3720,7 +3250,6 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let buttonMessage = {
                     image: { url: api('zenz', '/randomanime/' + command, {}, 'apikey') },
                     caption: `Random Image ${command}`,
-                    footer: akame.user.name,
                     buttons: buttons,
                     headerType: 4
                 }
@@ -3743,7 +3272,6 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let buttonMessage = {
                     image: { url: api('zenz', '/randomanime/marin-kitagawa', {}, 'apikey') },
                     caption: `Random Image Marin Kitagawa`,
-                    footer: akame.user.name,
                     buttons: buttons,
                     headerType: 4
                 }
@@ -3766,7 +3294,6 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let buttonMessage = {
                     image: { url: api('zenz', '/randomanime/mori-calliope', {}, 'apikey') },
                     caption: `Random Image Mori Calliope`,
-                    footer: akame.user.name,
                     buttons: buttons,
                     headerType: 4
                 }
@@ -3789,7 +3316,6 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let buttonMessage = {
                     image: { url: api('zenz', '/randomanime/raiden-shogun', {}, 'apikey') },
                     caption: `Random Image Raiden Shogun`,
-                    footer: akame.user.name,
                     buttons: buttons,
                     headerType: 4
                 }
@@ -3856,7 +3382,6 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let buttonMessage = {
                     image: { url: result },
                     caption: `Random Anime ${command}`,
-                    footer: akame.user.name,
                     buttons: buttons,
                     headerType: 4
                 }
@@ -3890,7 +3415,6 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let buttonMessage = {
                     image: { url: result },
                     caption: `Random Image ${command}`,
-                    footer: akame.user.name,
                     buttons: buttons,
                     headerType: 4
                 }
@@ -3913,7 +3437,6 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let buttonMessage = {
                     image: { url: result },
                     caption: `Random Wallpaper ${command}`,
-                    footer: akame.user.name,
                     buttons: buttons,
                     headerType: 4
                 }
@@ -3938,7 +3461,6 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let buttonMessage = {
                     image: { url: api('zenz', '/randomimage/' + command, {}, 'apikey') },
                     caption: `Random Image ${command}`,
-                    footer: akame.user.name,
                     buttons: buttons,
                     headerType: 4
                 }
@@ -3968,7 +3490,6 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 let buttonMessage = {
                     image: { url: result },
                     caption: `Random Asupan ${command}`,
-                    footer: akame.user.name,
                     buttons: buttons,
                     headerType: 4
                 }
@@ -4016,7 +3537,6 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                         url: 'https://coffee.alexflipnote.dev/random'
                     },
                     caption: `☕ Random Coffe`,
-                    footer: akame.user.name,
                     buttons: buttons,
                     headerType: 4
                 }
@@ -4047,7 +3567,6 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                         url: result.image[0]
                     },
                     caption: `⭔ Title : ${result.title}\n⭔ Category : ${result.type}\n⭔ Detail : ${result.source}\n⭔ Media Url : ${result.image[2] || result.image[1] || result.image[0]}`,
-                    footer: akame.user.name,
                     buttons: buttons,
                     headerType: 4
                 }
@@ -4078,7 +3597,6 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                         url: result.image
                     },
                     caption: `📄 Judul : ${result.title}\n📬 Sumber : ${result.source}\n🔗 Media Url : ${result.image}`,
-                    footer: akame.user.name,
                     buttons: buttons,
                     headerType: 4
                 }
@@ -4106,7 +3624,6 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 }]
                 let buttonMessage = {
                     text: `~_${result.quotes}_\n\nBy '${result.karakter}', ${result.anime}\n\n- ${result.up_at}`,
-                    footer: 'Quotes By Akame',
                     buttons: buttons,
                     headerType: 2
                 }
@@ -4130,7 +3647,6 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                 }]
                 let buttonMessage = {
                     text: `~_${anu.result.quotes}_\n\nBy '${anu.result.character}', ${anu.result.anime}\n\n- ${anu.result.episode}`,
-                    footer: 'Quotes By Akame',
                     buttons: buttons,
                     headerType: 2
                 }
@@ -4151,8 +3667,7 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
             case 'trumpthink':
             case 'creepyfact':
             case 'faktaunik':
-            case 'puisi':
-            case 'pantun': {
+            case 'puisi': {
                 m.reply(mess.wait)
                 if (!isPremium && global.db.data.users[m.sender].limit < 1) return m.reply(mess.endLimit) // respon ketika limit habis
                 db.data.users[m.sender].limit -= 1 // -1 limit
@@ -4651,7 +4166,6 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                         url: anu.nowm
                     },
                     caption: `👤 *Author:* ${anu.author}\n📌 *Title:* ${anu.title}\n🔗 Download From ${text}`,
-                    footer: akame.user.name,
                     headerType: 5
                 }
                 akame.sendMessage(m.chat, buttonMessage, {
@@ -4669,7 +4183,6 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
                         url: anu.watermark
                     },
                     caption: `👤 *Author:* ${anu.author}\n📌 *Title:* ${anu.title}\n🔗 Download From ${text}`,
-                    footer: akame.user.name,
                     headerType: 5
                 }
                 akame.sendMessage(m.chat, buttonMessage, {
@@ -4814,7 +4327,6 @@ ${vote[m.chat][2].map((v, i) => `├ ${i + 1}. @${v.split`@`[0]}`).join('\n')}
 ⭔ Url : ${anu.media[0]}
 Untuk Download Media Silahkan Klik salah satu Button dibawah ini atau masukkan command ytmp3/ytmp4 dengan url diatas
 `,
-			footer: akame.user.name,
 			buttons,
 			headerType: 4
 		    }
@@ -5669,7 +5181,6 @@ Lihat list Pesan Dengan • ${prefix}listmsg`)
                     }]
                     const listMessage = {
                         text: 'List 25 Nabi',
-                        footer: akame.user.name,
                         buttonText: 'OPEN LIST',
                         sections
                     }
@@ -5697,7 +5208,6 @@ Lihat list Pesan Dengan • ${prefix}listmsg`)
                     }]
                     const listMessage = {
                         text: 'List Niat Sholat',
-                        footer: akame.user.name,
                         buttonText: 'OPEN LIST',
                         sections
                     }
